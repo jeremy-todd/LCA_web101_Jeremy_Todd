@@ -1,7 +1,7 @@
 body {
   font-family: Arial, Helvetica, sans-serif;
   /*background-image: url(https://png.pngtree.com/thumb_back/fh260/back_pic/00/15/30/4656e81f6dc57c5.jpg);*/
-  background-image: url(https://jeremy-todd.github.io/LCA_web101_Jeremy_Todd/myPortfolio/images/background.jpg);
+  background-image: url(/images/background.jpg);
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: 100% 100%;
@@ -13,7 +13,7 @@ body {
 
 .logo {
   width: 35%;
-  height: 80%;
+  height: 90%;
   margin: 3% 10%;
 }
 
@@ -36,10 +36,10 @@ nav > a {
   width: 15%;
   color: white;
   font-family: Arial, Helvetica, sans-serif;
-  font-size: 20px;
-  border-radius: 25px;
+  font-size: 18px;
+  border-radius: 15px;
   background: transparent;
-  padding: 20px; 
+  padding: 15px; 
   text-align: center;
   border: 2px solid white;
 }
@@ -49,11 +49,8 @@ nav > a:hover {
 }
 
 .has-border {
-  border-radius: 25px;
   border: 2px solid #0795C3;
   background: none;
-  padding: 20px;
-  text-align: center;
 }
 
 nav {
@@ -91,21 +88,4 @@ h2 {
   font-style: italic;
   text-align: center;
   color: white;
-}
-
-button {
-  grid-column: 2/3;
-  margin: 3% auto;
-  width: 70%;
-  height: 15%;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 20px;
-  border-radius: 25px;
-  background: transparent;
-  padding: 20px; 
-  padding-bottom: 5%;
-  text-align: center;
-  color: green;
-  letter-spacing: 16px;
-  font-style: italic;
 }
