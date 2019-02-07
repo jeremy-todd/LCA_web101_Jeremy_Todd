@@ -1,7 +1,7 @@
 body {
   font-family: Arial, Helvetica, sans-serif;
   /*background-image: url(https://png.pngtree.com/thumb_back/fh260/back_pic/00/15/30/4656e81f6dc57c5.jpg);*/
-  background-image: url(https://jeremy-todd.github.io/LCA_web101_Jeremy_Todd/myPortfolio/images/background.jpg);
+  background-image: url(/images/background.jpg);
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: 100% 100%;
@@ -12,8 +12,8 @@ body {
 }
 
 .logo {
-  width: 35%;
-  height: 90%;
+  width: 100px;
+  height: 100px;
   margin: 3% 10%;
 }
 
@@ -32,7 +32,7 @@ main {
 
 nav > a {
   margin: 2% 1%;
-  height: 10%;
+  height: 32%;
   width: 15%;
   color: white;
   font-family: Arial, Helvetica, sans-serif;
@@ -45,11 +45,11 @@ nav > a {
 }
 
 nav > a:hover {
-  background-color: #0795C3;
+  background-color: #2B3278;
 }
 
 .has-border {
-  border: 2px solid #0795C3;
+  border: 2px solid #2B3278;
   background: none;
 }
 
@@ -67,19 +67,15 @@ nav {
   grid-column: 2/3;
 }
 
-#profile-pic:hover {
+/*#profile-pic:hover {
   transform: scale(1.25);
-}
+}*/
 
 h1 {
   color:white;
   grid-column: 2/3;
-  margin: 3% auto;
-  border-bottom: 2px solid #1940A9;;
-}
-
-h1:hover {
-  transform: scale(1.50);
+  margin: auto;
+  border-bottom: 2px solid #1940A9;
 }
 
 h2 {
@@ -87,5 +83,5 @@ h2 {
   margin: auto;
   font-style: italic;
   text-align: center;
-  color: white;
+  color: black;
 }
