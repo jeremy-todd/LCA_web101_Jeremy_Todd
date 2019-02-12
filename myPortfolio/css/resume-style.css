@@ -14,28 +14,201 @@ main {
     height: 100%;
     margin-left:auto;
     margin-right:auto;
-    background-color: white;
 }
 
 .header {
     position: fixed;
     top: 0px;
-    left: 0px;
-    width: 800px;
     height: 150px;
+    width: 800px;
+    /*padding: 0% 1%;*/
     margin-left: auto;
     margin-right: auto;
-    background-color: blue;
+    z-index: 3;
+    background-color:white;
+    border-bottom: 2px solid darkgray;
+}
+
+.header h1 {
+    margin-left: 300px;
+    text-transform: uppercase;
+    font-size: 50px;
+    line-height: 50%;
+}
+
+.header h2 {
+    margin-left: 300px;
+}
+
+#PageNav {
+    color: black;
+    position: absolute;
+    margin-top: 10px;
+    margin-left: 10px;
+    z-index: 2;
+}
+
+#profile-pic {
+    position: absolute;
+    width: 175px;
+    height: 175px;
+    top: -62.5px;
+    left: 37.5px;
+    border-radius: 50%;
+    margin: 15% auto;
+    z-index: 1;
 }
 
 .left {
+    position: fixed;
+    top: 140px;
+    margin-left: auto;
+    width: 249px;
+    float: left;
+    margin-bottom: 35px;
+    height: 112vh;
+    background-color:white;
+    
+}
+
+.right {
     position: relative;
-    top: 150px;
-    left: 0px;
-    width: 200px;
-    background-color:red;
+    top: 140px;
+    width:549px;
+    float: right;
+    margin-bottom: 36px;
+    height: 100%;
+    background-color: white;
+    border-left: 2px solid darkgray;
 }
 
 #Contact {
+    position: relative;
+    margin-top: 105px;
+    margin-left:auto;
+    margin-right:auto;
+    width: 220px;
+    background-color:white;
+}
 
+#Contact h3 {
+    text-align: center;
+}
+
+#Contact h4 {
+    margin-left: 20px;
+    line-height: 5%;
+}
+
+#Contact p {
+    margin-left: 20px;
+}
+
+#Skills {
+    margin-left: auto;
+    margin-right: auto;
+    width: 220px;
+    background-color: white;
+}
+
+#Skills h3{
+    text-align: center;
+}
+
+#Skills ul {
+    margin-left: -20px;
+    list-style-type: none;
+}
+
+#AboutMe {
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 530px;
+    background-color: white;
+}
+
+#AboutMe p {
+    margin-left: 39px;
+}
+
+#WorkExp {
+    margin-left: auto;
+    margin-right: auto;
+    width: 530px;
+    background-color: white;
+}
+
+#WorkExp h4 {
+    margin-left: 40px;    
+}
+
+#WorkExp h5 {
+    margin-left: 40px;
+}
+
+#WorkExp p {
+    margin-left: 39px;
+}
+
+#Education {
+    margin-left: auto;
+    margin-right:auto;
+    width: 530px;
+    background-color: white;
+}
+
+#Education h4 {
+    margin-left: 45px;
+}
+
+#Education p {
+    margin-left: 45px;
+}
+
+#Certifications {
+    margin-left: auto;
+    margin-right:auto;
+    width: 530px;
+    background-color: white;
+}
+
+#Certifications h4 {
+    margin-left: 45px;
+}
+
+#Certifications ul {
+    margin-left: 2px;
+    list-style-type: none;
+}
+
+.footer {
+    position: fixed;
+    bottom: 0px;
+    height: 35px;
+    width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: white;
+    border-top: 2px solid darkgray;
+}
+
+.footer > .copy {
+    float: left;
+    width: 250px;
+    text-align: left;
+    font-size: 12px;
+    padding: 10px 0px 0px 15px;
+}
+
+.footer > .social {
+    float: right;
+    width: 250px;
+    text-align: right;
+    padding: 2px 15px 0px 0px;
+}
+
+.footer > .social a {
+    color: black;
+    
 }
