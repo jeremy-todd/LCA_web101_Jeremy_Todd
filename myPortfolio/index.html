@@ -5,22 +5,26 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
   <title>My Portfolio</title>
 </head>
   <body>
-    <header>
-      <img src="./images/lubbock-logo.png" class="logo" alt="Lubbock Coding Academy Logo">
-        <nav>
-          <a class="has-border">Contact<br />Me</a>
-          <a href="src/resume.html">My<br />Resume</a>
-          <a href="src/blog.html">My<br />Blog</a>
-          <a>My<br />Skills</a>
-        </nav>
-    </header>
-    <main>
+    <div class="header">
+      <div class="logodiv"><img src="./images/lubbock-logo.png" class="logo" alt="Lubbock Coding Academy Logo"></div>
+      <div class="nav">
+          <button class="navbtn"><i class="fas fa-bars"></i></button>
+          <div class="nav-content">
+            <a href="#">Contact Me</a>
+            <a href="./src/resume.html">My Resume</a>
+            <a href="./src/blog.html">My Blog</a>
+            <a href="#">My Skills</a>
+          </div>
+        </div>
+      </div>
+    <div class="main">
       <img src="./images/myProfilePic.jpg" id="profile-pic" alt="Headshot of Me">
       <h1>Jeremy J. Todd</h1>
       <h2>Student of Web Development</h2>
-    </main>
+    </div>
   </body>
 </html>
