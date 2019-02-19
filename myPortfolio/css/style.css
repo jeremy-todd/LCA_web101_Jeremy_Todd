@@ -105,3 +105,11 @@ body {
     margin-top: 15px;
   }
 }
+
+#portfolio {
+  background-color: lightgray;
+  color: black;
+  padding: 4px;
+  font-size: 16px;
+  border-radius: 5%;
+}
