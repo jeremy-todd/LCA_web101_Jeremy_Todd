@@ -10,33 +10,120 @@
 </head>
 <body>
     <div class="container">
-        <div class="greeting"><p id="name">Welcome --Name--!</p><p id="phrase">"Even if you're on the right track you'll get run over if you just sit there."</p><p id="attribution">-Will Rogers</p></div>
-        <div class="todo">This is the to do list div.</div>
-        <div class="clck">
-            <div id="dte">DATE</div>
-            <div id="tme">TIME</div>
-        </div>    
+        <div class="greeting"><p id="greeting">Good Afternoon!</p><p id="phrase">"Even if you're on the right track you'll get run over if you just sit there."</p><p id="attribution">-Will Rogers</p></div>
+        <div class="todo">
+            <div class="tasks">
+                <div id="todo">To Do:</div>
+                <div class="when">Today</div>
+                <div class="task">Item 1 needs to wrap when smaller screen</div>
+                <div class="due">02/19/2019</div>
+                <div class="task">Item 2...</div>
+                <div class="due">02/19/2019</div>
+                <div class="when">Tomorrow</div>
+                <div class="task">Item 3...</div>
+                <div class="due">02/20/2019</div>
+                <div class="task">Item 4...</div>
+                <div class="due">02/20/2019</div>
+                <div class="when">Next Week</div>
+                <div class="task">Item 5...</div>
+                <div class="due">02/25/2019</div>
+                <div class="task">Item 6...</div>
+                <div class="due">02/28/2019</div>
+
+            </div>
+        </div>
+        <div class="clock">
+            <div id="dte"><span id="date">February 19, 2019</span></div>
+            <div id="tme"><span id="time">12:59 PM</span></div>
+        </div>
+        <div class="calendar">
+            <div id="monthbox">
+                <div id="prevMonth"><i class="fas fa-caret-left"></i></div>
+                <div id="month">February</div>
+                <div id="nextMonth"><i class="fas fa-caret-right"></i></div>
+                <div id="sun">Su</div>
+                <div id="mon">M</div>
+                <div id="tue">T</div>
+                <div id="wed">W</div>
+                <div id="thu">R</div>
+                <div id="fri">F</div>
+                <div id="sat">Sa</div>
+                <div id="week1Sunday"></div>
+                <div id="week1Monday"></div>
+                <div id="week1Tuesday"></div>
+                <div id="week1Wednesday"></div>
+                <div id="week1Thursday"></div>
+                <div id="week1Friday">1</div>
+                <div id="week1Saturday">2</div>
+                <div id="week2Sunday">3</div>
+                <div id="week2Monday">4</div>
+                <div id="week2Tuesday">5</div>
+                <div id="week2Wednesday">6</div>
+                <div id="week2Thursday">7</div>
+                <div id="week2Friday">8</div>
+                <div id="week2Saturday">9</div>
+                <div id="week3Sunday">10</div>
+                <div id="week3Monday">11</div>
+                <div id="week3Tuesday">12</div>
+                <div id="week3Wednesday">13</div>
+                <div id="week3Thursday">14</div>
+                <div id="week3Friday">15</div>
+                <div id="week3Saturday">16</div>
+                <div id="week4Sunday">17</div>
+                <div id="week4Monday">18</div>
+                <div id="week4Tuesday">19</div>
+                <div id="week4Wednesday">20</div>
+                <div id="week4Thursday">21</div>
+                <div id="week4Friday">22</div>
+                <div id="week4Saturday">23</div>
+                <div id="week5Sunday">24</div>
+                <div id="week5Monday">25</div>
+                <div id="week5Tuesday">26</div>
+                <div id="week5Wednesday">27</div>
+                <div id="week5Thursday">28</div>
+                <div id="week5Friday"></div>
+                <div id="week5Saturday"></div>
+            </div>
+        </div> 
         <div class="calculator">
-            <div id="display">DISPLAY</div>
-            <div id="ac">AC</div>
-            <div id="positive">+/-</div>
-            <div id="percent">%</div>
-            <div id="divide">&#247;</div>
-            <div id="seven">7</div>
-            <div id="eight">8</div>
-            <div id="nine">9</div>
-            <div id="multiply">*</div>
-            <div id="four">4</div>
-            <div id="five">5</div>
-            <div id="six">6</div>
-            <div id="minus">-</div>
-            <div id="one">1</div>
-            <div id="two">2</div>
-            <div id="three">3</div>
-            <div id="add">+</div>
-            <div id="zero">0</div>
-            <div id="point">.</div>
-            <div id="equals">=</div>
+            <div id="display">0</div>
+            <div id="ac"><img src="../images/calculator/ac.png" alt="all clear"></div>
+            <div id="positive"><img src="../images/calculator/positive.png" alt="positive - negative"></div>
+            <div id="percent"><img src="../images/calculator/percent.png" alt="percent"></div>
+            <div id="divide"><img src="../images/calculator/divide.png" alt="divide"></div>
+            <div id="seven"><img src="../images/calculator/7.png" alt="7"></div>
+            <div id="eight"><img src="../images/calculator/8.png" alt="8"></div>
+            <div id="nine"><img src="../images/calculator/9.png" alt="9"></div>
+            <div id="multiply"><img src="../images/calculator/multiply.png" alt="multiply"></div>
+            <div id="four"><img src="../images/calculator/4.png" alt="4"></div>
+            <div id="five"><img src="../images/calculator/5.png" alt="5"></div>
+            <div id="six"><img src="../images/calculator/6.png" alt="6"></div>
+            <div id="minus"><img src="../images/calculator/minus.png" alt="minus"></div>
+            <div id="one"><img src="../images/calculator/1.png" alt="1"></div>
+            <div id="two"><img src="../images/calculator/2.png" alt="2"></div>
+            <div id="three"><img src="../images/calculator/3.png" alt="3"></div>
+            <div id="add"><img src="../images/calculator/plus.png" alt="plus"></div>
+            <div id="zero"><img src="../images/calculator/0.png" alt="0"></div>
+            <div id="point"><img src="../images/calculator/point.png" alt="point"></div>
+            <div id="equals"><img src="../images/calculator/equals.png" alt="equals"></div>
+        </div>
+        <div class="quicklaunch">
+            <div id="ql">Quick Launch</div>
+            <div id="ql01">1</div>
+            <div id="ql02">2</div>
+            <div id="ql03">3</div>
+            <div id="ql04">4</div>
+            <div id="ql05">5</div>
+            <div id="ql06">6</div>
+            <div id="ql07">7</div>
+            <div id="ql08">8</div>
+            <div id="ql09">9</div>
+            <div id="ql10">10</div>
+            <div id="ql11">11</div>
+            <div id="ql12">12</div>
+            <div id="ql13">13</div>
+            <div id="ql14">14</div>
+            <div id="ql15">15</div>
         </div>
     </div>
 </body>
