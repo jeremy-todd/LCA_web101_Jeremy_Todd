@@ -111,7 +111,7 @@ input[type=checkbox] {
 
 #dte #date {
     opacity: 1;
-    font-size: 80px;
+    font-size: 70px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -132,7 +132,7 @@ input[type=checkbox] {
 
 #tme #time {
     opacity: 1;
-    font-size: 80px;
+    font-size: 70px;
     display: flex;
     align-items: center;
     justify-content: center;
