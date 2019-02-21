@@ -10,7 +10,7 @@ body {
     display: grid;
     width: 100%;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-    grid-template-rows: 150px 290px 290px 290px 290px 290px;
+    grid-template-rows: 250px 290px 290px 290px 290px 290px;
     grid-column-gap: 1%;
     grid-row-gap: 1%;
     grid-template-areas:
@@ -30,18 +30,18 @@ body {
 }
 
 .greeting #greeting {
-    font-size: 20px;
+    font-size: 40px;
     font-weight: bold;
     line-height: 50%;
 }
 
 .greeting #phrase {
-    font-size: 40px;
+    font-size: 60px;
     line-height: 10%;
 }
 
 .greeting #attribution {
-    font-size: 20px;
+    font-size: 40px;
     font-style: italic;
 }
 
@@ -52,7 +52,7 @@ body {
     margin-right: auto;
     background-color: white;
     border: 2px solid black;
-    font-size: 40px;
+    /*font-size: 60px;*/
     opacity: 0.75;
 }
 
@@ -61,7 +61,7 @@ body {
     margin: 1% auto 0 auto;
     grid-column: 1/5;
     grid-row: 1/2;
-    font-size: 35px;
+    font-size: 50px;
     display: grid;
     grid-template-columns: 5px 5px 1fr 1fr 1fr 1fr;
     opacity: 1;
@@ -74,26 +74,31 @@ body {
 
 .todo .when {
     grid-column: 2/7;
-    font-size: 30px;
+    font-size: 40px;
     border-top: 3px solid black;
     border-bottom: 1px solid slategray;
 }
 
 .todo .task {
     grid-column: 3/6;
-    font-size: 25px;
+    font-size: 35px;
 }
 
 .todo .due {
     grid-column: 6/7;
-    font-size: 25px;
+    font-size: 35px;
     text-align: right;
     margin-right: 5%;
 }
 
+input[type=checkbox] {
+    width: 20px;
+    height: 20px;
+}
+
 #dte {
     grid-area: dte;
-    width: 90%;
+    width: 80%;
     margin-left: auto;
     margin-right: auto;
     background-color: white;
@@ -106,7 +111,7 @@ body {
 
 #dte #date {
     opacity: 1;
-    font-size: 45px;
+    font-size: 80px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -114,7 +119,7 @@ body {
 
 #tme {
     grid-area: tme;
-    width: 90%;
+    width: 80%;
     margin-left: auto;
     margin-right: auto;
     background-color: white;
@@ -127,7 +132,7 @@ body {
 
 #tme #time {
     opacity: 1;
-    font-size: 45px;
+    font-size: 80px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -139,7 +144,7 @@ body {
     height: auto;
     margin-left: auto;
     margin-right: auto;
-    font-size: 14px;
+    font-size: 50px;
     text-align: center;
     margin-top: 22px;
 }
@@ -173,7 +178,7 @@ body {
     align-items: center;
     justify-content: center;
     border-bottom: 1px solid gray;
-    font-size: 30px;
+    font-size: 75px;
     font-variant: small-caps;
 }
 
@@ -857,7 +862,7 @@ body {
     font-family: Arial, Helvetica, sans-serif;
 }
 
-.display2 {
+#display2 {
     width: 380px;
     height: 85px;
     background-color: white;
@@ -1108,8 +1113,9 @@ input[type=text] {
     display: grid;
     background-color: white;
     border: 2px solid black;
+    font-size: 40px;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-    grid-template-rows: 50px auto;
+    grid-template-rows: 100px auto;
     grid-gap: 5px;
     padding: 10px;
     opacity: 0.75;
@@ -1124,7 +1130,7 @@ input[type=text] {
     grid-area: ql;
     font-variant: small-caps;
     text-align: center;
-    font-size: 40px;
+    font-size: 80px;
     padding-top: 3px;
 }
 
@@ -1233,370 +1239,433 @@ input[type=text] {
     text-align: center;
 }
 
-@media (max-width: 415px) {
+@media (max-width: 1440px) {
+    .container {
+        grid-template-rows: 150px 290px 290px 290px 290px 290px;
+    }
+
+    .greeting #greeting {
+        font-size: 20px;
+    }
+
+    .greeting #phrase {
+        font-size: 40px;
+    }
+
+    .greeting #attribution {
+        font-size: 20px;
+    }
+
+    .todo .tasks {
+        font-size: 35px;
+    }
+
+    .todo .when {
+        font-size: 30px;
+    }
+
+    .todo .task {
+        font-size: 25px;
+    }
+
+    .todo .due {
+        font-size: 25px;
+    }
+
+    input[type=checkbox] {
+        width: 15px;
+        height: 15px;
+    }
+
+    #dte {
+        width: 90%;
+    }
+
+    #dte #date {
+        font-size: 45px;
+    }
+
+    #tme {
+        width: 90%;
+    }
+
+    #tme #time {
+        font-size: 45px;
+    }
+
+    .calendar {
+        font-size: 30px;
+        width: 90%;
+    }
+
+    #month {
+        font-size: 45px;
+    }
+
+    .quicklaunch {
+        grid-template-rows: 50px auto;
+        font-size: 25px;
+    }
+
+    .quicklaunch #ql {
+        font-size: 40px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .container {
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-areas:
+            "greeting greeting greeting"
+            "todo todo dte"
+            "todo todo tme"
+            "todo todo calculator"
+            "todo todo calculator"
+            "todo todo calculator2"
+            "todo todo calculator2"
+            "todo todo calendar"
+            "todo todo quicklaunch"
+    }
+
+    .greeting #greeting {
+        line-height: 100%;
+    }
+
+    .greeting #phrase {
+        font-size: 30px;
+        line-height: 50%;
+    }
+
+    .todo .tasks {
+        font-size: 30px;
+    }
+
+    .todo .when {
+        font-size: 25px;
+    }
+
+    .todo .task {
+        font-size: 20px;
+    }
+
+    .todo .due {
+        font-size: 20px;
+    }
+
+    input[type=checkbox] {
+        width: 12px;
+        height: 12px;
+    }
+
+    #dte {
+        width: 100%;
+    }
+
+    #dte #date {
+        font-size: 35px;
+    }
+
+    #tme {
+        width: 100%;
+    }
+
+    #tme #time {
+        font-size: 35px;
+    }
+
+    .calendar {
+        width: 100%;
+    }
+
+    #calculator {
+        width: 365px;
+        font-size: 35px;
+    }
+
+    #display {
+        width: 345px;
+        height: 70px;
+    }
+
+    #ac {
+        width: 70px;
+        height: 70px;
+    }
+
+    #positive {
+        width: 70px;
+        height: 70px;        
+    }
+
+    #percent {
+        width: 70px;
+        height: 70px;
+    }
+
+    #divide {
+        width: 70px;
+        height: 70px;
+    }
+
+    #seven {
+        width: 70px;
+        height: 70px;
+    }
+
+    #eight {
+        width: 70px;
+        height: 70px;
+    }
+
+    #nine {
+        width: 70px;
+        height: 70px;
+    }
+
+    #multiply {
+        width: 70px;
+        height: 70px;
+    }
+
+    #four {
+        width: 70px;
+        height: 70px;
+    }
+
+    #five {
+        width: 70px;
+        height: 70px;
+    }
+
+    #six {
+        width: 70px;
+        height: 70px;
+    }
+
+    #minus {
+        width: 70px;
+        height: 70px;
+    }
+
+    #one {
+        width: 70px;
+        height: 70px;
+    }
+
+    #two {
+        width: 70px;
+        height: 70px;
+    }
+
+    #three {
+        width: 70px;
+        height: 70px;
+    }
+
+    #plus {
+        width: 70px;
+        height: 70px;
+    }
+
+    #zero {
+        width: 156px;
+        height: 70px;
+    }
+
+    #point {
+        width: 70px;
+        height: 70px;
+    }
+
+    #equals {
+        width: 70px;
+        height: 70px;
+    }
+
+    input[type=text] {
+        width: 341px;
+        height: 64px;
+        font-size: 35px;
+    }
+
+    #calculator2 {
+        width: 365px;
+        font-size: 35px;
+    }
+
+    #display2 {
+        width: 345px;
+        height: 70px;
+    }
+
+    #ac2 {
+        width: 70px;
+        height: 70px;
+    }
+
+    #positive2 {
+        width: 70px;
+        height: 70px;        
+    }
+
+    #percent2 {
+        width: 70px;
+        height: 70px;
+    }
+
+    #divide2 {
+        width: 70px;
+        height: 70px;
+    }
+
+    #seven2 {
+        width: 70px;
+        height: 70px;
+    }
+
+    #eight2 {
+        width: 70px;
+        height: 70px;
+    }
+
+    #nine2 {
+        width: 70px;
+        height: 70px;
+    }
+
+    #multiply2 {
+        width: 70px;
+        height: 70px;
+    }
+
+    #four2 {
+        width: 70px;
+        height: 70px;
+    }
+
+    #five2 {
+        width: 70px;
+        height: 70px;
+    }
+
+    #six2 {
+        width: 70px;
+        height: 70px;
+    }
+
+    #minus2 {
+        width: 70px;
+        height: 70px;
+    }
+
+    #one2 {
+        width: 70px;
+        height: 70px;
+    }
+
+    #two2 {
+        width: 70px;
+        height: 70px;
+    }
+
+    #three2 {
+        width: 70px;
+        height: 70px;
+    }
+
+    #plus2 {
+        width: 70px;
+        height: 70px;
+    }
+
+    #zero2 {
+        width: 156px;
+        height: 70px;
+    }
+
+    #point2 {
+        width: 70px;
+        height: 70px;
+    }
+
+    #equals2 {
+        width: 70px;
+        height: 70px;
+    }
+
+    .quicklaunch {
+        grid-template-rows: 40px auto;
+    }
+
+    .quicklaunch #ql {
+        font-size: 35px;
+        padding-top: 0; 
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        grid-template-rows: 160px 290px 290px 290px 290px 290px 290px;
+    }
+
+    .greeting #greeting {
+        font-size: 15px;
+    }
+
+    .greeting #phrase {
+        font-size: 25px;
+        line-height: 100%;
+    }
+
+    .greeting #attribution {
+        font-size: 15px;
+        padding-bottom: 10px;
+    }
+
+    .todo .tasks {
+        font-size: 25px;
+    }
+
+    .todo .when {
+        font-size: 20px;
+    }
+
+    .todo .task {
+        font-size: 18px;
+    }
+
+    .todo .due {
+        font-size: 18px;
+    }
+
+    .calendar {
+        font-size: 24px;
+    }
+
+    #month {
+        font-size: 35px;
+    }
+}
+
+@media (max-width: 425px) {
     body {
         background-image: none;
-        margin: 5;
-        font-family: Arial, Helvetica, sans-serif;
     }
 
     .container {
         grid-template-columns: 1fr;
-        grid-template-rows: auto;
+        grid-template-rows: 160px auto auto auto auto auto auto;
         grid-template-areas:
             "greeting"
             "dte"
             "tme"
             "todo"
             "todo"
-            "todo"
-            "calendar"
+            "calculator"
             "calculator"
             "calculator2"
+            "calculator2"
+            "calendar"
             "quicklaunch";
-    }
-
-    .greeting {
-        text-align: center;
-        background-color: white;
-    }
-    
-    .greeting #greeting {
-        font-size: 20px;
-        font-weight: bold;
-        line-height: 50%;
-    }
-    
-    .greeting #phrase {
-        font-size: 40px;
-        line-height: 100%;
-        width: 90%;
-        margin-left: auto;
-        margin-right: auto;
-    }
-    
-    .greeting #attribution {
-        font-size: 20px;
-        font-style: italic;
-    }
-
-    .todo {
-        width: 90%;
-
-    }
-
-    .todo .tasks {
-        width: 98%;
-        margin: 1% auto 0 auto;
-        grid-column: 1/5;
-        grid-row: 1/2;
-        font-size: 30px;
-        display: grid;
-        grid-template-columns: 5px 5px 1fr 1fr 1fr;
-        opacity: 1;
-    }
-
-    #todo {
-        grid-column: 1/7;
-        font-variant: small-caps;
-    }
-    
-    .todo .when {
-        grid-column: 2/7;
-        font-size: 25px;
-        border-top: 3px solid black;
-        border-bottom: 1px solid slategray;
-    }
-    
-    .todo .task {
-        grid-column: 3/6;
-        font-size: 20px;
-    }
-    
-    .todo .due {
-        grid-column: 6/7;
-        font-size: 20px;
-        text-align: right;
-        margin-right: 5%;
-    }
-
-    #dte #date {
-        opacity: 1;
-        font-size: 25px;
-    }
-
-    #tme #time {
-        opacity: 1;
-        font-size: 25px;
-    }
-
-    .calendar {
-        grid-area: calendar;
-        width: 90%;
-        height: auto;
-        margin-left: auto;
-        margin-right: auto;
-        font-size: 24px;
-        text-align: center;
-        margin-top: 22px;
-    }
-
-    .quicklaunch {
-        grid-area: quicklaunch;
-        display: grid;
-        width: 90%;
-        margin-left: auto;
-        margin-right: auto;
-        background-color: white;
-        border: 2px solid black;
-        grid-template-columns: 1fr 1fr 1fr;
-        grid-template-rows: 50px auto;
-        grid-gap: 5px;
-        padding: 0px;
-        opacity: 0.75;
-        grid-template-areas:
-            "ql ql ql"
-            "ql01 ql02 ql03"
-            "ql04 ql05 ql06"
-            "ql07 ql08 ql09"
-            "ql10 ql11 ql12"
-            "ql13 ql14 ql15";
-    }
-
-    .quicklaunch #ql {
-        grid-area: ql;
-        font-variant: small-caps;
-        text-align: center;
-        font-size: 40px;
-        padding-top: 3px;
     }
 }
-
-/*@media (max-width: 768px) {
-    body {
-        background-image: none;
-        margin: 5;
-        font-family: Arial, Helvetica, sans-serif;
-    }
-
-    .container {
-        grid-template-columns: 1fr;
-        grid-template-rows: auto;
-        grid-template-areas:
-            "greeting"
-            "clock"
-            "clock"
-            "todo"
-            "todo"
-            "todo"
-            "calendar"
-            "calculator"
-            "quicklaunch";
-    }
-
-    .greeting {
-        text-align: center;
-        background-color: white;
-    }
-    
-    .greeting #greeting {
-        font-size: 20px;
-        font-weight: bold;
-        line-height: 50%;
-    }
-    
-    .greeting #phrase {
-        font-size: 40px;
-        line-height: 100%;
-        width: 90%;
-        margin-left: auto;
-        margin-right:auto;
-    }
-    
-    .greeting #attribution {
-        font-size: 20px;
-        font-style: italic;
-    }
-
-    .todo {
-        width: 90%;
-
-    }
-
-    .todo .tasks {
-        width: 98%;
-        margin: 1% auto 0 auto;
-        grid-column: 1/5;
-        grid-row: 1/2;
-        font-size: 30px;
-        display: grid;
-        grid-template-columns: 5px 5px 1fr 1fr 1fr;
-        opacity: 1;
-    }
-
-    #todo {
-        grid-column: 1/7;
-        font-variant: small-caps;
-    }
-    
-    .todo .when {
-        grid-column: 2/7;
-        font-size: 25px;
-        border-top: 3px solid black;
-        border-bottom: 1px solid slategray;
-    }
-    
-    .todo .task {
-        grid-column: 3/6;
-        font-size: 20px;
-    }
-    
-    .todo .due {
-        grid-column: 6/7;
-        font-size: 20px;
-        text-align: right;
-        margin-right: 5%;
-    }
-
-    .clock {
-        grid-area: clock;
-        text-align: center;
-        font-size: 35px;
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: 1fr 1fr;
-        grid-template-areas:
-            "dte"
-            "tme";
-    }
-
-    #tme #time {
-        grid-row: 2/3;
-        opacity: 1;
-        font-size: 50px;
-    }
-
-    .calendar {
-        grid-area: calendar;
-        width: 43%;
-        height: auto;
-        margin-left: auto;
-        margin-right: auto;
-        font-size: 24px;
-        text-align: center;
-        margin-top: 22px;
-    }
-
-    .calculator {
-        grid-area: calculator;
-        width: 300px;
-        height: 316px;
-        margin-left: auto;
-        margin-right: auto;
-        padding: 5px;
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr;
-        grid-column-gap: 1%;
-        grid-row-gap: 1%;
-        color: white;
-        text-align: center;
-        vertical-align: middle;
-        background-color: slategray;
-    }
-
-    .quicklaunch {
-        grid-area: quicklaunch;
-        display: grid;
-        width: 50%;
-        margin-left: auto;
-        margin-right: auto;
-        background-color: white;
-        border: 2px solid black;
-        grid-template-columns: 1fr 1fr 1fr;
-        grid-template-rows: 50px auto;
-        grid-gap: 5px;
-        padding: 0px;
-        opacity: 0.75;
-        grid-template-areas:
-            "ql ql ql"
-            "ql01 ql02 ql03"
-            "ql04 ql05 ql06"
-            "ql07 ql08 ql09"
-            "ql10 ql11 ql12"
-            "ql13 ql14 ql15";
-    }
-
-    .quicklaunch #ql {
-        grid-area: ql;
-        font-variant: small-caps;
-        text-align: center;
-        font-size: 40px;
-        padding-top: 3px;
-    }
-}*/
-
-/*@media (max-width: 1024px) {
-    .container {
-        grid-template-columns: 1fr 1fr 1fr 1fr;
-        grid-template-rows: auto;
-        grid-template-areas:
-            "greeting greeting greeting greeting"
-            "todo todo clock calendar"
-            "todo todo clock calculator"
-            "todo todo quicklaunch quicklaunch";
-    }
-
-    .greeting #phrase {
-        font-size: 40px;
-        line-height: 100%;
-        width: 90%;
-        margin-left: auto;
-        margin-right:auto;
-    }
-
-    .clock {
-        grid-area: clock;
-        text-align: center;
-        font-size: 35px;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around;
-    }
-
-    #tme #time {
-        opacity: 1;
-        font-size: 40px;
-    }
-
-    .calendar {
-        grid-area: calendar;
-        width: 100%;
-        height: auto;
-        margin-left: auto;
-        margin-right: auto;
-        font-size: 24px;
-        text-align: center;
-        margin-top: 22px;
-    }
-
-    .quicklaunch {
-        grid-area: quicklaunch;
-        display: grid;
-        width: 100%;
-        margin-left: auto;
-        margin-right: auto;
-        background-color: white;
-        border: 2px solid black;
-        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-        grid-template-rows: 50px auto;
-        grid-gap: 5px;
-        padding: 0px;
-        opacity: 0.75;
-        font-size: 40px;
-        grid-template-areas:
-            "ql ql ql ql ql"
-            "ql01 ql02 ql03 ql04 ql05"
-            "ql06 ql07 ql08 ql09 ql10"
-            "ql11 ql12 ql13 ql14 ql15";
-    }
-}*/
