@@ -1233,7 +1233,7 @@ input[type=text] {
     text-align: center;
 }
 
-/*@media (max-width: 415px) {
+@media (max-width: 415px) {
     body {
         background-image: none;
         margin: 5;
@@ -1245,13 +1245,14 @@ input[type=text] {
         grid-template-rows: auto;
         grid-template-areas:
             "greeting"
-            "clock"
-            "clock"
+            "dte"
+            "tme"
             "todo"
             "todo"
             "todo"
             "calendar"
             "calculator"
+            "calculator2"
             "quicklaunch";
     }
 
@@ -1319,22 +1320,14 @@ input[type=text] {
         margin-right: 5%;
     }
 
-    .clock {
-        grid-area: clock;
-        text-align: center;
-        font-size: 35px;
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: 1fr 1fr;
-        grid-template-areas:
-            "dte"
-            "tme";
+    #dte #date {
+        opacity: 1;
+        font-size: 25px;
     }
 
     #tme #time {
-        grid-row: 2/3;
         opacity: 1;
-        font-size: 50px;
+        font-size: 25px;
     }
 
     .calendar {
@@ -1346,23 +1339,6 @@ input[type=text] {
         font-size: 24px;
         text-align: center;
         margin-top: 22px;
-    }
-
-    .calculator {
-        grid-area: calculator;
-        width: 90%;
-        height: 316px;
-        margin-left: auto;
-        margin-right: auto;
-        padding: 0;
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr;
-        grid-column-gap: 1%;
-        grid-row-gap: 1%;
-        color: white;
-        text-align: center;
-        vertical-align: middle;
-        background-color: slategray;
     }
 
     .quicklaunch {
@@ -1394,7 +1370,7 @@ input[type=text] {
         font-size: 40px;
         padding-top: 3px;
     }
-}*/
+}
 
 /*@media (max-width: 768px) {
     body {
