@@ -554,7 +554,7 @@ body {
     padding: 5px;
 }
 
-.calculator {
+#calculator {
     grid-area: calculator;
     width: 400px;
     margin-left: auto;
@@ -840,7 +840,7 @@ body {
     margin: 5px 10px 10px 5px;
 }
 
-.calculator2 {
+#calculator2 {
     grid-area: calculator2;
     width: 400px;
     margin-left: auto;
