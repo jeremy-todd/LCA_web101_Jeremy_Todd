@@ -9,16 +9,17 @@ body {
 .container {
     display: grid;
     width: 100%;
-    height: 95vh;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-    grid-template-rows: 150px 1fr 1fr 1fr;
+    grid-template-rows: 150px 290px 290px 290px 290px 290px;
     grid-column-gap: 1%;
     grid-row-gap: 1%;
     grid-template-areas:
         "greeting greeting greeting greeting greeting"
-        "todo todo clock calendar calculator"
-        "todo todo clock calendar calculator"
-        "todo todo clock quicklaunch quicklaunch";
+        "todo todo dte dte calculator"
+        "todo todo tme tme calculator"
+        "todo todo calendar calendar calculator2"
+        "todo todo calendar calendar calculator2"
+        "todo todo quicklaunch quicklaunch quicklaunch";
 }
 
 .greeting {
@@ -90,21 +91,6 @@ body {
     margin-right: 5%;
 }
 
-.clock {
-    grid-area: clock;
-    text-align: center;
-    font-size: 35px;
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
-    grid-template-areas:
-        "."
-        "dte"
-        "."
-        "tme"
-        ".";
-}
-
 #dte {
     grid-area: dte;
     width: 90%;
@@ -112,14 +98,18 @@ body {
     margin-right: auto;
     background-color: white;
     border: 2px solid black;
-    display: grid;
-    grid-template-rows: 1fr 1fr 1fr;
     opacity: .75;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 #dte #date {
-    grid-row: 2/3;
     opacity: 1;
+    font-size: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 #tme {
@@ -129,15 +119,18 @@ body {
     margin-right: auto;
     background-color: white;
     border: 2px solid black;
-    display: grid;
-    grid-template-rows: 1 fr 1fr 1fr;
     opacity: .75;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 #tme #time {
-    grid-row: 2/3;
     opacity: 1;
-    font-size: 75px;
+    font-size: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .calendar {
@@ -146,7 +139,7 @@ body {
     height: auto;
     margin-left: auto;
     margin-right: auto;
-    font-size: 24px;
+    font-size: 14px;
     text-align: center;
     margin-top: 22px;
 }
@@ -154,335 +147,419 @@ body {
 .calendar #monthbox {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas:
+        "prevMonth month month month month month nextMonth"
+        "sun mon tue wed thu fri sat"
+        "wk1su wk1mo wk1tu wk1we wk1th wk1fr wk1sa"
+        "wk2su wk2mo wk2tu wk2we wk2th wk2fr wk2sa"
+        "wk3su wk3mo wk3tu wk3we wk3th wk3fr wk3sa"
+        "wk4su wk4mo wk4tu wk4we wk4th wk4fr wk4sa"
+        "wk5su wk5mo wk5tu wk5we wk5th wk5fr wk5sa";
     background-color: white;
     border: 2px solid black;
 }
 
 #prevMonth {
-    grid-column: 1/2;
-    grid-row: 1/2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    grid-area: prevMonth;
     border-bottom: 1px solid gray;
-    text-align: left;
-    padding: 3px 0 0 10px;
 }
 
 #month {
-    grid-column: 2/7;
-    grid-row: 1/2;
+    grid-area: month;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     border-bottom: 1px solid gray;
     font-size: 30px;
     font-variant: small-caps;
 }
 
 #nextMonth {
-    grid-column: 7/8;
-    grid-row: 1/2;
+    grid-area: nextMonth;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     border-bottom: 1px solid gray;
-    text-align: right;
-    padding: 3px 10px 0 0;
 }
 
 #sun {
-    grid-column: 1/2;
-    grid-row: 2/3;
+    grid-area: sun;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     border: 1px solid gray;
-    padding: 5px;
 }
 
 #mon {
-    grid-column: 2/3;
-    grid-row: 2/3;
+    grid-area: mon;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     border: 1px solid gray;
-    padding: 5px;
 }
 
 #tue {
-    grid-column: 3/4;
-    grid-row: 2/3;
+    grid-area: tue;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     border: 1px solid gray;
-    padding: 5px;
 }
 
 #wed {
-    grid-column: 4/5;
-    grid-row: 2/3;
+    grid-area: wed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     border: 1px solid gray;
-    padding: 5px;
 }
 
 #thu {
-    grid-column: 5/6;
-    grid-row: 2/3;
+    grid-area: thu;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     border: 1px solid gray;
-    padding: 5px;
 }
 
 #fri {
-    grid-column: 6/7;
-    grid-row: 2/3;
+    grid-area: fri;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     border: 1px solid gray;
-    padding: 5px;
 }
 
 #sat {
-    grid-column: 7/8;
-    grid-row: 2/3;
+    grid-area: sat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     border: 1px solid gray;
-    padding: 5px;
 }
 
 #week1Sunday {
-    grid-column: 1/2;
-    grid-row: 3/4;
+    grid-area: wk1su;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     border: 1px solid gray;
     padding: 5px;
 }
 
 #week1Monday {
-    grid-column: 2/3;
-    grid-row: 3/4;
+    grid-area: wk1mo;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     border: 1px solid gray;
     padding: 5px;
 }
 
 #week1Tuesday {
-    grid-column: 3/4;
-    grid-row: 3/4;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     border: 1px solid gray;
     padding: 5px;
 }
 
 #week1Wednesday {
-    grid-column: 4/5;
-    grid-row: 3/4;
+    grid-area: wk1we;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     border: 1px solid gray;
     padding: 5px;
 }
 
 #week1Thursday {
-    grid-column: 5/6;
-    grid-row: 3/4;
+    grid-area: wk1th;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     border: 1px solid gray;
     padding: 5px;
 }
 
 #week1Friday {
-    grid-column: 6/7;
-    grid-row: 3/4;
+    grid-area: wk1fr;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     border: 1px solid gray;
     padding: 5px;
 }
 
 #week1Saturday {
-    grid-column: 7/8;
-    grid-row: 3/4;
+    grid-area: wk1sa;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     border: 1px solid gray;
     padding: 5px;
 }
 
 #week2Sunday {
-    grid-column: 1/2;
-    grid-row: 4/5;
+    grid-area: wk2su;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     border: 1px solid gray;
     padding: 5px;
 }
 
 #week2Monday {
-    grid-column: 2/3;
-    grid-row: 4/5;
+    grid-area: wk2mo;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     border: 1px solid gray;
     padding: 5px;
 }
 
 #week2Tuesday {
-    grid-column: 3/4;
-    grid-row: 4/5;
+    grid-area: wk2tu;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     border: 1px solid gray;
     padding: 5px;
 }
 
 #week2Wednesday {
-    grid-column: 4/5;
-    grid-row: 4/5;
+    grid-area: wk2we;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     border: 1px solid gray;
     padding: 5px;
 }
 
 #week2Thursday {
-    grid-column: 5/6;
-    grid-row: 4/5;
+    grid-area: wk2th;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     border: 1px solid gray;
     padding: 5px;
 }
 
 #week2Friday {
-    grid-column: 6/7;
-    grid-row: 4/5;
+    grid-area: wk2fr;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     border: 1px solid gray;
     padding: 5px;
 }
 
 #week2Saturday {
-    grid-column: 7/8;
-    grid-row: 4/5;
+    grid-area: wk2sa;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     border: 1px solid gray;
     padding: 5px;
 }
 
 #week3Sunday {
-    grid-column: 1/2;
-    grid-row: 5/6;
+    grid-area: wk3su;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     border: 1px solid gray;
     padding: 5px;
 }
 
 #week3Monday {
-    grid-column: 2/3;
-    grid-row: 5/6;
+    grid-area: wk3mo;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     border: 1px solid gray;
     padding: 5px;
 }
 
 #week3Tuesday {
-    grid-column: 3/4;
-    grid-row: 5/6;
+    grid-area: wk3tu;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     border: 1px solid gray;
     padding: 5px;
 }
 
 #week3Wednesday {
-    grid-column: 4/5;
-    grid-row: 5/6;
+    grid-area: wk3we;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     border: 1px solid gray;
     padding: 5px;
 }
 
 #week3Thursday {
-    grid-column: 5/6;
-    grid-row: 5/6;
+    grid-area: wk3th;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     border: 1px solid gray;
     padding: 5px;
 }
 
 #week3Friday {
-    grid-column: 6/7;
-    grid-row: 5/6;
+    grid-area: wk3fr;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     border: 1px solid gray;
     padding: 5px;
 }
 
 #week3Saturday {
-    grid-column: 7/8;
-    grid-row: 5/6;
+    grid-area: wk3sa;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     border: 1px solid gray;
     padding: 5px;
 }
-
 #week4Sunday {
-    grid-column: 1/2;
-    grid-row: 6/7;
+    grid-area: wk4su;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     border: 1px solid gray;
     padding: 5px;
 }
 
 #week4Monday {
-    grid-column: 2/3;
-    grid-row: 6/7;
+    grid-area: wk4mo;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     border: 1px solid gray;
     padding: 5px;
 }
 
 #week4Tuesday {
-    grid-column: 3/4;
-    grid-row: 6/7;
+    grid-area: wk4tu;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     border: 1px solid gray;
     padding: 5px;
 }
 
 #week4Wednesday {
-    grid-column: 4/5;
-    grid-row: 6/7;
+    grid-area: wk4we;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     border: 1px solid gray;
     padding: 5px;
 }
 
 #week4Thursday {
-    grid-column: 5/6;
-    grid-row: 6/7;
+    grid-area: wk4th;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     border: 1px solid gray;
     padding: 5px;
 }
 
 #week4Friday {
-    grid-column: 6/7;
-    grid-row: 6/7;
+    grid-area: wk4fr;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     border: 1px solid gray;
     padding: 5px;
 }
 
 #week4Saturday {
-    grid-column: 7/8;
-    grid-row: 6/7;
+    grid-area: wk4sa;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     border: 1px solid gray;
     padding: 5px;
 }
 
 #week5Sunday {
-    grid-column: 1/2;
-    grid-row: 7/8;
+    grid-area: wk5su;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     border: 1px solid gray;
     padding: 5px;
 }
 
 #week5Monday {
-    grid-column: 2/3;
-    grid-row: 7/8;
+    grid-area: wk5mo;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     border: 1px solid gray;
     padding: 5px;
 }
 
 #week5Tuesday {
-    grid-column: 3/4;
-    grid-row: 7/8;
+    grid-area: wk5tu;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     border: 1px solid gray;
     padding: 5px;
 }
 
 #week5Wednesday {
-    grid-column: 4/5;
-    grid-row: 7/8;
+    grid-area: wk5we;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     border: 1px solid gray;
     padding: 5px;
 }
 
 #week5Thursday {
-    grid-column: 5/6;
-    grid-row: 7/8;
+    grid-area: wk5th;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     border: 1px solid gray;
     padding: 5px;
 }
 
 #week5Friday {
-    grid-column: 6/7;
-    grid-row: 7/8;
+    grid-area: wk5fr;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     border: 1px solid gray;
     padding: 5px;
 }
 
 #week5Saturday {
-    grid-column: 7/8;
-    grid-row: 7/8;
+    grid-area: wk5sa;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     border: 1px solid gray;
     padding: 5px;
 }
 
 .calculator {
     grid-area: calculator;
-    width: calc(100% - 50px);
-    height: 316px;
+    width: 400px;
     margin-left: auto;
     margin-right: auto;
-    padding: 1%;
+    padding-top: 10px;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-areas:
@@ -496,57 +573,27 @@ body {
     text-align: center;
     vertical-align: middle;
     background-color: slategray;
+    font-size: 50px;
 }
 
 #display {
     grid-area: display;
+    height: 85px;
+    width: 380px;
     background-color: white;
     color: black;
     border:2px solid black;
-    font-size: 40px;
     display: flex;
     align-items: center;
     justify-content: flex-end;
-}
-
-#buttons01 {
-    grid-area: buttons01;
-    font-weight: bolder;
-    display: flex;
-    justify-content: space-around;
-    width: calc(90%-50px);
-}
-
-#buttons02 {
-    grid-area: buttons02;
-    font-weight: bolder;
-    display: flex;
-    justify-content: space-around;
-}
-
-#buttons03 {
-    grid-area: buttons03;
-    font-weight: bolder;
-    display: flex;
-    justify-content: space-around;
-}
-
-#buttons04 {
-    grid-area: buttons04;
-    font-weight: bolder;
-    display: flex;
-    justify-content: space-around;
-}
-
-#buttons05 {
-    grid-area: buttons05;
-    font-weight: bolder;
-    display: flex;
-    justify-content: space-around;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 #ac {
     grid-area: ac;
+    height: 85px;
+    width: 85px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -558,6 +605,8 @@ body {
 
 #positive {
     grid-area: positive;
+    height: 85px;
+    width: 85px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -569,6 +618,8 @@ body {
 
 #percent {
     grid-area: percent;
+    height: 85px;
+    width: 85px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -580,6 +631,8 @@ body {
 
 #divide {
     grid-area: divide;
+    height: 85px;
+    width: 85px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -592,6 +645,8 @@ body {
 
 #seven {
     grid-area: seven;
+    height: 85px;
+    width: 85px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -603,6 +658,8 @@ body {
 
 #eight {
     grid-area: eight;
+    height: 85px;
+    width: 85px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -614,6 +671,8 @@ body {
 
 #nine {
     grid-area: nine;
+    height: 85px;
+    width: 85px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -625,6 +684,8 @@ body {
 
 #multiply {
     grid-area: multiplication;
+    height: 85px;
+    width: 85px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -637,6 +698,8 @@ body {
 
 #four {
     grid-area: four;
+    height: 85px;
+    width: 85px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -648,6 +711,8 @@ body {
 
 #five {
     grid-area: five;
+    height: 85px;
+    width: 85px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -659,6 +724,8 @@ body {
 
 #six {
     grid-area: six;
+    height: 85px;
+    width: 85px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -670,6 +737,8 @@ body {
 
 #minus {
     grid-area: minus;
+    height: 85px;
+    width: 85px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -682,6 +751,8 @@ body {
 
 #one {
     grid-area: one;
+    height: 85px;
+    width: 85px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -693,6 +764,8 @@ body {
 
 #two {
     grid-area: two;
+    height: 85px;
+    width: 85px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -704,6 +777,8 @@ body {
 
 #three {
     grid-area: three;
+    height: 85px;
+    width: 85px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -715,6 +790,8 @@ body {
 
 #plus {
     grid-area: plus;
+    height: 85px;
+    width: 85px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -726,6 +803,8 @@ body {
 
 #zero {
     grid-area: cero;
+    height: 85px;
+    width: 180px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -737,6 +816,8 @@ body {
 
 #point {
     grid-area: point;
+    height: 85px;
+    width: 85px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -748,6 +829,271 @@ body {
 
 #equals {
     grid-area: equals;
+    height: 85px;
+    width: 85px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: orange;
+    color: white;
+    border-radius: 25px;
+    margin: 5px 10px 10px 5px;
+}
+
+.calculator2 {
+    grid-area: calculator2;
+    width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    font-size: 50px;
+    color: white;
+    text-align: center;
+    vertical-align: middle;
+    background-color: slategray;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.display2 {
+    width: 380px;
+    height: 85px;
+    background-color: white;
+    color: black;
+    border: 2px solid black;
+}
+
+input[type=text] {
+    width: 376px;
+    height: 79px;
+    font-size: 50px;
+    text-align: right;
+}
+
+#ac2 {
+    width: 85px;
+    height: 85px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    color: white;
+    border-radius: 25px;
+    margin: 10px 5px 5px 10px;
+}
+
+#positive2 {
+    width: 85px;
+    height: 85px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    color: white;
+    border-radius: 25px;
+    margin: 10px 5px 5px 5px;
+}
+
+#percent2 {
+    width: 85px;
+    height: 85px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    color: white;
+    border-radius: 25px;
+    margin: 10px 5px 5px 5px;
+}
+
+#divide2 {
+    width: 85px;
+    height: 85px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: orange;
+    color: white;
+    border-radius: 25px;
+    margin-left: 10px;
+    margin: 10px 10px 5px 5px;
+}
+
+#seven2 {
+    width: 85px;
+    height: 85px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    color: white;
+    border-radius: 25px;
+    margin: 5px 5px 5px 10px;
+}
+
+#eight2 {
+    width: 85px;
+    height: 85px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    color: white;
+    border-radius: 25px;
+    margin: 5px 5px 5px 5px;
+}
+
+#nine2 {
+    width: 85px;
+    height: 85px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    color: white;
+    border-radius: 25px;
+    margin: 5px 5px 5px 5px;
+}
+
+#multiply2 {
+    width: 85px;
+    height: 85px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: orange;
+    color: white;
+    border-radius: 25px;
+    margin-left: 10px;
+    margin: 5px 10px 5px 5px;
+}
+
+#four2 {
+    width: 85px;
+    height: 85px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    color: white;
+    border-radius: 25px;
+    margin: 5px 5px 5px 10px;
+}
+
+#five2 {
+    width: 85px;
+    height: 85px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    color: white;
+    border-radius: 25px;
+    margin: 5px 5px 5px 5px;
+}
+
+#six2 {
+    width: 85px;
+    height: 85px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    color: white;
+    border-radius: 25px;
+    margin: 5px 5px 5px 5px;
+}
+
+#minus2 {
+    width: 85px;
+    height: 85px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: orange;
+    color: white;
+    border-radius: 25px;
+    margin-left: 10px;
+    margin: 5px 10px 5px 5px;
+}
+
+#one2 {
+    width: 85px;
+    height: 85px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    color: white;
+    border-radius: 25px;
+    margin: 5px 5px 5px 10px;
+}
+
+#two2 {
+    width: 85px;
+    height: 85px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    color: white;
+    border-radius: 25px;
+    margin: 5px 5px 5px 5px;
+}
+
+#three2 {
+    width: 85px;
+    height: 85px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    color: white;
+    border-radius: 25px;
+    margin: 5px 5px 5px 5px;
+}
+
+#plus2 {
+    width: 85px;
+    height: 85px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: orange;
+    color: white;
+    border-radius: 25px;
+    margin: 5px 10px 5px 5px;
+}
+
+#zero2 {
+    width: 180px;
+    height: 85px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    color: white;
+    border-radius: 25px;
+    margin: 5px 5px 10px 10px;
+}
+
+#point2 {
+    width: 85px;
+    height: 85px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    color: white;
+    border-radius: 25px;
+    margin: 5px 5px 10px 5px;
+}
+
+#equals2 {
+    width: 85px;
+    height: 85px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -887,7 +1233,7 @@ body {
     text-align: center;
 }
 
-@media (max-width: 415px) {
+/*@media (max-width: 415px) {
     body {
         background-image: none;
         margin: 5;
@@ -1048,9 +1394,9 @@ body {
         font-size: 40px;
         padding-top: 3px;
     }
-}
+}*/
 
-@media (max-width: 768px) {
+/*@media (max-width: 768px) {
     body {
         background-image: none;
         margin: 5;
@@ -1211,9 +1557,9 @@ body {
         font-size: 40px;
         padding-top: 3px;
     }
-}
+}*/
 
-@media (max-width: 1024px) {
+/*@media (max-width: 1024px) {
     .container {
         grid-template-columns: 1fr 1fr 1fr 1fr;
         grid-template-rows: auto;
@@ -1277,4 +1623,4 @@ body {
             "ql06 ql07 ql08 ql09 ql10"
             "ql11 ql12 ql13 ql14 ql15";
     }
-}
+}*/
