@@ -77,6 +77,8 @@ header {
 #mainTop img {
     width: 378px;
     height: 356px;
+    border-top-left-radius: 2px;
+    border-bottom-left-radius: 2px;
 }
 
 .spaceTop {
