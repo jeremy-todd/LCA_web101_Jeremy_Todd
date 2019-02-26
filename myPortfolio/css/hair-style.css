@@ -177,3 +177,12 @@ header {
     display: flex;
     align-items: center;
 }
+
+#hairstyleText {
+    margin: 15px 15px;
+}
+
+#hairstyleText #attribution {
+    font-size: 18px;
+    text-align: right;
+}
