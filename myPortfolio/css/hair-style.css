@@ -1,7 +1,7 @@
 body {
     margin: 0;
     background-color: #ECECEC;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 header {
@@ -44,9 +44,21 @@ header {
     color: white;
     border: none;
     border-radius: 7px;
-    height: 40px;
+    height: 30px;
     text-transform: uppercase;
-    padding: 10px 10px;
+    align-items: center;
+    padding: 0 15px 0 15px;
+}
+
+.navButtonActive {
+    background-color: #365F64;
+    color: white;
+    border: none;
+    border-radius: 7px;
+    height: 30px;
+    text-transform: uppercase;
+    align-items: center;
+    padding: 0 15px 0 15px;
 }
 
 #mainTop {
@@ -72,6 +84,7 @@ header {
 }
 
 #contentTop {
+    font-family: 'Times New Roman', Times, serif;
     font-size: 40px;
     display: flex;
     align-items: center;
@@ -85,12 +98,44 @@ header {
     justify-content: space-between;
 }
 
-#tiles img {
+#tiles .pic {
     width: 210px;
     height: 171px;
     border: 5px solid #5FB1BC;
     border-radius: 5px;
-    box-shadow: 0px 30px 40px -15px slategray;
+}
+
+#tiles .shadow
+{
+	position: relative;
+}
+#tiles .shadow:before, .shadow:after
+{
+	position: absolute;
+	z-index: -1;
+	content: "";
+	bottom: 25px;
+	left: 10px;
+	width: 95%;
+	top: 80%;
+	-webkit-box-shadow: 0 30px 15px black;
+	-moz-box-shadow: 0 30px 15px black;
+	box-shadow: 0 30px 15px black;
+	-webkit-transform: rotate(-7deg);
+	-moz-transform: rotate(-7deg);
+	-o-transform: rotate(-7deg);
+	-ms-transform: rotate(-7deg);
+	transform: rotate(-7deg);
+}
+#tiles .shadow:after
+{
+  -webkit-transform: rotate(7deg);
+  -moz-transform: rotate(7deg);
+  -o-transform: rotate(7deg);
+  -ms-transform: rotate(7deg);
+  transform: rotate(7deg);
+  right: 10px;
+  left: auto;
 }
 
 #tile1 {
@@ -134,6 +179,7 @@ header {
     color: white;
     width: 115px;
     margin: -15px 0 0 15px;
+    font-family: 'Times New Roman', Times, serif;
     font-size: 20px;
     padding-left: 15px;
 }
@@ -146,7 +192,7 @@ header {
 }
 
 #featuredHead {
-    margin: -12px 150px 0 0;
+    margin: -10px 20% 0 0;
 }
 
 #featuredText {
@@ -172,6 +218,7 @@ header {
     color: white;
     width: 115px;
     margin: -15px 0 0 15px;
+    font-family: 'Times New Roman', Times, serif;
     font-size: 20px;
     padding-left: 15px;
     display: flex;
@@ -185,4 +232,69 @@ header {
 #hairstyleText #attribution {
     font-size: 18px;
     text-align: right;
+}
+
+#ad {
+    background-color: #529093;
+    border: 5px solid #5FB1BC;
+    border-radius: 5px;
+    color: white;
+    margin-top: 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#adImage {
+    width: 190px;
+    height: 238px;
+    margin-top: -10px;
+}
+
+#adText {
+    font-size: 14px;
+    font-weight: bold;
+    padding: 0 15px 0 15px;
+}
+
+footer {
+    height: 110px;
+    background-color: #529093;
+    margin-top: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#foot {
+    width: 960px;
+    height: 110px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+}
+
+#spaceBottom {
+    width: 30%
+}
+
+#copyright {
+    width: 30%;
+    font-size: 12px;
+}
+
+#socal {
+    background-color: #387A82;
+    width: auto;
+    height: 50%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0 15px;
+}
+
+#social {
+    width: 100%;
+    color: #1B6068;
 }

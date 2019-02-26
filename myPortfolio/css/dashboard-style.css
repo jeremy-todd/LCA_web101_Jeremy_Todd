@@ -1,3 +1,5 @@
+/*Main CSS style for a mac-width of 2560px*/
+
 body {
     margin: 5;
     background-image: url(../images/background.jpg);
@@ -140,7 +142,7 @@ input[type=checkbox] {
 
 .calendar {
     grid-area: calendar;
-    width: 90%;
+    width: 80%;
     height: auto;
     margin-left: auto;
     margin-right: auto;
@@ -1302,226 +1304,6 @@ input[type=text] {
         font-size: 45px;
     }
 
-    #month {
-        font-size: 40px;
-    }
-
-    #calculator {
-        width: 300px;
-        font-size: 32px;
-    }
-    
-    #display {
-        height: 50px;
-        width: 280px;
-    }
-    
-    #ac {
-        width: 58px;
-        height: 58px;
-    }
-    
-    #positive {
-        width: 58px;
-        height: 58px;
-    }
-    
-    #percent {
-        width: 58px;
-        height: 58px;
-    }
-    
-    #divide {
-        width: 58px;
-        height: 58px;
-    }
-    
-    #seven {
-        width: 58px;
-        height: 58px;
-    }
-    
-    #eight {
-        width: 58px;
-        height: 58px;
-    }
-    
-    #nine {
-        width: 58px;
-        height: 58px;
-    }
-    
-    #multiply {
-        width: 58px;
-        height: 58px;
-    }
-    
-    #four {
-        width: 58px;
-        height: 58px;
-    }
-    
-    #five {
-        width: 58px;
-        height: 58px;
-    }
-    
-    #six {
-        width: 58px;
-        height: 58px;
-    }
-    
-    #minus {
-        width: 58px;
-        height: 58px;
-    }
-    
-    #one {
-        width: 58px;
-        height: 58px;
-    }
-    
-    #two {
-        width: 58px;
-        height: 58px;
-    }
-    
-    #three {
-        width: 58px;
-        height: 58px;
-    }
-    
-    #plus {
-        width: 58px;
-        height: 58px;
-    }
-    
-    #zero {
-        width: 128px;
-        height: 58px;
-    }
-    
-    #point {
-        width: 58px;
-        height: 58px;
-    }
-    
-    #equals {
-        width: 58px;
-        height: 58px;
-    }
-
-    #calculator2 {
-        width: 300px;
-        font-size: 32px;
-    }
-    
-    .display2 {
-        width: 280px;
-        height: 50px;
-    }
-    
-    input[type=text] {
-        width: 276px;
-        height: 45px;
-        font-size: 30px;
-    }
-    
-    #ac2 {
-        width: 58px;
-        height: 58px;
-    }
-    
-    #positive2 {
-        width: 58px;
-        height: 58px;
-    }
-    
-    #percent2 {
-        width: 58px;
-        height: 58px;
-    }
-    
-    #divide2 {
-        width: 58px;
-        height: 58px;
-    }
-    
-    #seven2 {
-        width: 58px;
-        height: 58px;
-    }
-    
-    #eight2 {
-        width: 58px;
-        height: 58px;
-    }
-    
-    #nine2 {
-        width: 58px;
-        height: 58px;
-    }
-    
-    #multiply2 {
-        width: 58px;
-        height: 58px;
-    }
-    
-    #four2 {
-        width: 58px;
-        height: 58px;
-    }
-    
-    #five2 {
-        width: 58px;
-        height: 58px;
-    }
-    
-    #six2 {
-        width: 58px;
-        height: 58px;
-    }
-    
-    #minus2 {
-        width: 58px;
-        height: 58px;
-    }
-    
-    #one2 {
-        width: 58px;
-        height: 58px;
-    }
-    
-    #two2 {
-        width: 58px;
-        height: 58px;
-    }
-    
-    #three2 {
-        width: 58px;
-        height: 58px;
-    }
-    
-    #plus2 {
-        width: 58px;
-        height: 58px;
-    }
-    
-    #zero2 {
-        width: 128px;
-        height: 58px;
-    }
-    
-    #point2 {
-        width: 58px;
-        height: 58px;
-    }
-    
-    #equals2 {
-        width: 58px;
-        height: 58px;
-    }
-
     .quicklaunch {
         grid-template-rows: 50px auto;
         font-size: 25px;
@@ -1559,6 +1341,7 @@ input[type=text] {
     .todo .tasks {
         font-size: 30px;
     }
+
     .todo .when {
         font-size: 25px;
     }
