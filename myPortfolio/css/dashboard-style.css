@@ -10,11 +10,7 @@ body {
     display: grid;
     width: 100%;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-<<<<<<< HEAD
-    grid-template-rows: 260px 290px 290px 290px 290px 290px;
-=======
     grid-template-rows: 250px 290px 290px 290px 290px 290px;
->>>>>>> 998dbd6065f73cd00d7d0eebc912ee34ec0e9ff4
     grid-column-gap: 1%;
     grid-row-gap: 1%;
     grid-template-areas:
@@ -85,20 +81,12 @@ body {
 
 .todo .task {
     grid-column: 3/6;
-<<<<<<< HEAD
-    font-size: 40px;
-=======
     font-size: 35px;
->>>>>>> 998dbd6065f73cd00d7d0eebc912ee34ec0e9ff4
 }
 
 .todo .due {
     grid-column: 6/7;
-<<<<<<< HEAD
-    font-size: 40px;
-=======
     font-size: 35px;
->>>>>>> 998dbd6065f73cd00d7d0eebc912ee34ec0e9ff4
     text-align: right;
     margin-right: 5%;
 }
@@ -123,11 +111,7 @@ input[type=checkbox] {
 
 #dte #date {
     opacity: 1;
-<<<<<<< HEAD
-    font-size: 80px;
-=======
     font-size: 70px;
->>>>>>> 998dbd6065f73cd00d7d0eebc912ee34ec0e9ff4
     display: flex;
     align-items: center;
     justify-content: center;
@@ -148,11 +132,7 @@ input[type=checkbox] {
 
 #tme #time {
     opacity: 1;
-<<<<<<< HEAD
-    font-size: 80px;
-=======
     font-size: 70px;
->>>>>>> 998dbd6065f73cd00d7d0eebc912ee34ec0e9ff4
     display: flex;
     align-items: center;
     justify-content: center;
@@ -198,11 +178,7 @@ input[type=checkbox] {
     align-items: center;
     justify-content: center;
     border-bottom: 1px solid gray;
-<<<<<<< HEAD
-    font-size: 60px;
-=======
     font-size: 75px;
->>>>>>> 998dbd6065f73cd00d7d0eebc912ee34ec0e9ff4
     font-variant: small-caps;
 }
 
@@ -1139,11 +1115,7 @@ input[type=text] {
     border: 2px solid black;
     font-size: 40px;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-<<<<<<< HEAD
-    grid-template-rows: 85px auto;
-=======
     grid-template-rows: 100px auto;
->>>>>>> 998dbd6065f73cd00d7d0eebc912ee34ec0e9ff4
     grid-gap: 5px;
     padding: 10px;
     opacity: 0.75;
@@ -1158,11 +1130,7 @@ input[type=text] {
     grid-area: ql;
     font-variant: small-caps;
     text-align: center;
-<<<<<<< HEAD
-    font-size: 75px;
-=======
     font-size: 80px;
->>>>>>> 998dbd6065f73cd00d7d0eebc912ee34ec0e9ff4
     padding-top: 3px;
 }
 
@@ -1272,67 +1240,8 @@ input[type=text] {
 }
 
 @media (max-width: 1440px) {
-<<<<<<< HEAD
     .container {
         grid-template-rows: 150px 290px 290px 290px 290px 290px;
-    }
-
-    .greeting #greeting {
-        font-size: 20px;
-    }
-    
-    .greeting #phrase {
-        font-size: 40px;
-    }
-    
-    .greeting #attribution {
-        font-size: 20px;
-    }
-
-    #dte #date {
-        font-size: 45px;
-    }
-    
-    #tme #time {
-        font-size: 45px;
-    }
-
-    .calendar {
-        font-size: 30px;
-    }
-
-    #month {
-        font-size: 40px;
-    }
-    
-    .quicklaunch {
-        grid-template-rows: 50px auto;
-    }
-    
-    .quicklaunch #ql {
-        font-size: 40px;
-    }
-}
-
-@media (max-width: 1024px) {
-    .container {
-        grid-template-columns: 1fr 1fr 1fr;
-        grid-template-rows: auto;
-        grid-template-areas:
-            "greeting greeting greeting"
-            "todo todo tme"
-            "todo todo dte"
-            "todo todo calculator"
-            "todo todo calculator"
-            "todo todo calculator2"
-            "todo todo calculator2"
-            "todo todo calendar"
-            "todo todo calendar"
-            "todo todo quicklaunch";
-=======
-    .container {
-        grid-template-rows: 150px 290px 290px 290px 290px 290px;
->>>>>>> 998dbd6065f73cd00d7d0eebc912ee34ec0e9ff4
     }
 
     .greeting #greeting {
@@ -1351,65 +1260,17 @@ input[type=text] {
         font-size: 35px;
     }
 
-<<<<<<< HEAD
-    .todo .tasks {
-        width: 98%;
-        margin: 1% auto 0 auto;
-=======
     .todo .when {
->>>>>>> 998dbd6065f73cd00d7d0eebc912ee34ec0e9ff4
         font-size: 30px;
     }
 
-<<<<<<< HEAD
-    #todo {
-        font-variant: small-caps;
-    }
-    
-    .todo .when {
-=======
     .todo .task {
         font-size: 25px;
     }
 
     .todo .due {
->>>>>>> 998dbd6065f73cd00d7d0eebc912ee34ec0e9ff4
         font-size: 25px;
     }
-<<<<<<< HEAD
-    
-    .todo .task {
-        font-size: 20px;
-    }
-    
-    .todo .due {
-        font-size: 20px;
-        text-align: right;
-        margin-right: 5%;
-    }
-
-    #dte #date {
-        opacity: 1;
-        font-size: 35px;
-        height: 125px;
-    }
-
-    #tme #time {
-        opacity: 1;
-        font-size: 35px;
-        height: 125px;
-    }
-
-    .calendar {
-        grid-area: calendar;
-        width: calc(100% - 20px);
-        height: auto;
-        margin-left: auto;
-        margin-right: auto;
-        font-size: 24px;
-        text-align: center;
-        margin-top: 22px;
-=======
 
     input[type=checkbox] {
         width: 15px;
@@ -1439,7 +1300,6 @@ input[type=text] {
 
     #month {
         font-size: 45px;
->>>>>>> 998dbd6065f73cd00d7d0eebc912ee34ec0e9ff4
     }
 
     #month {
@@ -1663,17 +1523,6 @@ input[type=text] {
     }
 
     .quicklaunch {
-<<<<<<< HEAD
-        grid-area: quicklaunch;
-        display: grid;
-        width: calc(100% - 20px);
-        margin-left: auto;
-        margin-right: auto;
-        background-color: white;
-        border: 2px solid black;
-        grid-template-columns: 1fr 1fr 1fr;
-=======
->>>>>>> 998dbd6065f73cd00d7d0eebc912ee34ec0e9ff4
         grid-template-rows: 50px auto;
         font-size: 25px;
     }
@@ -1683,36 +1532,6 @@ input[type=text] {
     }
 }
 
-<<<<<<< HEAD
-@media (max-width: 768px) {
-    .greeting {
-        text-align: center;
-        background-color: white;
-    }
-    
-    .greeting #greeting {
-        font-size: 20px;
-        font-weight: bold;
-        line-height: 50%;
-    }
-    
-    .greeting #phrase {
-        font-size: 35px;
-        line-height: 100%;
-        width: 90%;
-        margin-left: auto;
-        margin-right: auto;
-    }
-
-    .todo {
-        width: calc(100% - 4px);
-
-    }
-
-    .todo .tasks {
-        width: 98%;
-        margin: 1% auto 0 auto;
-=======
 @media (max-width: 1024px) {
     .container {
         grid-template-columns: 1fr 1fr 1fr;
@@ -1738,14 +1557,8 @@ input[type=text] {
     }
 
     .todo .tasks {
->>>>>>> 998dbd6065f73cd00d7d0eebc912ee34ec0e9ff4
         font-size: 30px;
     }
-<<<<<<< HEAD
-    
-=======
-
->>>>>>> 998dbd6065f73cd00d7d0eebc912ee34ec0e9ff4
     .todo .when {
         font-size: 25px;
     }
@@ -1758,331 +1571,6 @@ input[type=text] {
         font-size: 20px;
     }
 
-<<<<<<< HEAD
-    #dte #date {
-        opacity: 1;
-        font-size: 24px;
-        height: 125px;
-    }
-
-    #tme #time {
-        opacity: 1;
-        font-size: 24px;
-        height: 125px;
-    }
-
-    .calendar {
-        grid-area: calendar;
-        width: calc(100% - 14px);
-        height: auto;
-        margin-left: auto;
-        margin-right: auto;
-        font-size: 19px;
-        text-align: center;
-        margin-top: 22px;
-    }
-
-    #month {
-        font-size: 30px;
-    }
-
-    #calculator {
-        width: 250px;
-        font-size: 24px;
-    }
-    
-    #display {
-        height: 50px;
-        width: 230px;
-    }
-    
-    #ac {
-        width: 50px;
-        height: 50px;
-        border-radius: 20px;
-    }
-    
-    #positive {
-        width: 50px;
-        height: 50px;
-        border-radius: 20px;
-    }
-    
-    #percent {
-        width: 50px;
-        height: 50px;
-        border-radius: 20px;
-    }
-    
-    #divide {
-        width: 50px;
-        height: 50px;
-        border-radius: 20px;
-    }
-    
-    #seven {
-        width: 50px;
-        height: 50px;
-        border-radius: 20px;
-    }
-    
-    #eight {
-        width: 50px;
-        height: 50px;
-        border-radius: 20px;
-    }
-    
-    #nine {
-        width: 50px;
-        height: 50px;
-        border-radius: 20px;
-    }
-    
-    #multiply {
-        width: 50px;
-        height: 50px;
-        border-radius: 20px;
-    }
-    
-    #four {
-        width: 50px;
-        height: 50px;
-        border-radius: 20px;
-    }
-    
-    #five {
-        width: 50px;
-        height: 50px;
-        border-radius: 20px;
-    }
-    
-    #six {
-        width: 50px;
-        height: 50px;
-        border-radius: 20px;
-    }
-    
-    #minus {
-        width: 50px;
-        height: 50px;
-        border-radius: 20px;
-    }
-    
-    #one {
-        width: 50px;
-        height: 50px;
-        border-radius: 20px;
-    }
-    
-    #two {
-        width: 50px;
-        height: 50px;
-        border-radius: 20px;
-    }
-    
-    #three {
-        width: 50px;
-        height: 50px;
-        border-radius: 20px;
-    }
-    
-    #plus {
-        width: 50px;
-        height: 50px;
-        border-radius: 20px;
-    }
-    
-    #zero {
-        width: 110px;
-        height: 50px;
-        border-radius: 20px;
-    }
-    
-    #point {
-        width: 50px;
-        height: 50px;
-        border-radius: 20px;
-    }
-    
-    #equals {
-        width: 50px;
-        height: 50px;
-        border-radius: 20px;
-    }
-
-    #calculator2 {
-        width: 250px;
-        font-size: 24px;
-    }
-    
-    .display2 {
-        width: 230px;
-        height: 50px;
-    }
-    
-    input[type=text] {
-        width: 226px;
-        height: 44px;
-        font-size: 24x;
-    }
-    
-    #ac2 {
-        width: 50px;
-        height: 50px;
-        border-radius: 20px;
-    }
-    
-    #positive2 {
-        width: 50px;
-        height: 50px;
-        border-radius: 20px;
-    }
-    
-    #percent2 {
-        width: 50px;
-        height: 50px;
-        border-radius: 20px;
-    }
-    
-    #divide2 {
-        width: 50px;
-        height: 50px;
-        border-radius: 20px;
-    }
-    
-    #seven2 {
-        width: 50px;
-        height: 50px;
-        border-radius: 20px;
-    }
-    
-    #eight2 {
-        width: 50px;
-        height: 50px;
-        border-radius: 20px;
-    }
-    
-    #nine2 {
-        width: 50px;
-        height: 50px;
-        border-radius: 20px;
-    }
-    
-    #multiply2 {
-        width: 50px;
-        height: 50px;
-        border-radius: 20px;
-    }
-    
-    #four2 {
-        width: 50px;
-        height: 50px;
-        border-radius: 20px;
-    }
-    
-    #five2 {
-        width: 50px;
-        height: 50px;
-        border-radius: 20px;
-    }
-    
-    #six2 {
-        width: 50px;
-        height: 50px;
-        border-radius: 20px;
-    }
-    
-    #minus2 {
-        width: 50px;
-        height: 50px;
-        border-radius: 20px;
-    }
-    
-    #one2 {
-        width: 50px;
-        height: 50px;
-        border-radius: 20px;
-    }
-    
-    #two2 {
-        width: 50px;
-        height: 50px;
-        border-radius: 20px;
-    }
-    
-    #three2 {
-        width: 50px;
-        height: 50px;
-        border-radius: 20px;
-    }
-    
-    #plus2 {
-        width: 50px;
-        height: 50px;
-        border-radius: 20px;
-    }
-    
-    #zero2 {
-        width: 110px;
-        height: 50px;
-        border-radius: 20px;
-    }
-    
-    #point2 {
-        width: 50px;
-        height: 50px;
-        border-radius: 20px;
-    }
-    
-    #equals2 {
-        width: 50px;
-        height: 50px;
-        border-radius: 20px;
-    }
-
-    .quicklaunch {
-        grid-area: quicklaunch;
-        display: grid;
-        width: calc(100% - 20px);
-        margin-left: auto;
-        margin-right: auto;
-        background-color: white;
-        border: 2px solid black;
-        grid-template-columns: 1fr 1fr 1fr;
-        grid-template-rows: 50px auto;
-        grid-gap: 5px;
-        padding: 0px;
-        opacity: 0.75;
-        grid-template-areas:
-            "ql ql ql"
-            "ql01 ql02 ql03"
-            "ql04 ql05 ql06"
-            "ql07 ql08 ql09"
-            "ql10 ql11 ql12"
-            "ql13 ql14 ql15";
-    }
-
-    .quicklaunch #ql {
-        grid-area: ql;
-        font-variant: small-caps;
-        text-align: center;
-        font-size: 32px;
-        padding-top: 3px;
-    }
-}
-
-@media (max-width: 425px) {
-    body {
-        background-image: none;
-        margin: 5;
-        font-family: Arial, Helvetica, sans-serif;
-    }
-
-    .container {
-        display: grid;
-        grid-template-columns: 100%;
-        grid-template-rows: auto;
-=======
     input[type=checkbox] {
         width: 12px;
         height: 12px;
@@ -2386,25 +1874,17 @@ input[type=text] {
     .container {
         grid-template-columns: 1fr;
         grid-template-rows: 160px auto auto auto auto auto auto;
->>>>>>> 998dbd6065f73cd00d7d0eebc912ee34ec0e9ff4
         grid-template-areas:
             "greeting"
             "dte"
             "tme"
             "todo"
             "todo"
-<<<<<<< HEAD
-            "todo"
-            "calendar"
-            "calculator"
-            "calculator2"
-=======
             "calculator"
             "calculator"
             "calculator2"
             "calculator2"
             "calendar"
->>>>>>> 998dbd6065f73cd00d7d0eebc912ee34ec0e9ff4
             "quicklaunch";
     }
 }
