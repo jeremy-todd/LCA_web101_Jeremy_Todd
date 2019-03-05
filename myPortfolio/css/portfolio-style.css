@@ -1,0 +1,124 @@
+/*Main CSS style for a max-width of 2560px*/
+
+body {
+    margin: 5;
+    background-image: url(../images/background.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+a:visited {
+    color: black;
+}
+
+.container {
+    width: 80%;
+    border: 2px solid black;
+    margin: 75px auto 0 auto;
+    background-color: white;
+}
+
+header {
+    width: 80%;
+    text-align: center;
+    margin: 30px auto 0 auto;
+    border-bottom: 2px solid gray;
+}
+
+#name {
+    font-size: 50px;
+    font-weight: bolder;
+    font-variant: small-caps;
+    margin: 0 0 30px 0;
+}
+
+#title {
+    font-size: 30px;
+    font-weight: bold;
+    font-variant: small-caps;
+    color: gray;
+    margin: 0 0 50px 0;
+}
+
+nav {
+    width: 25%;
+    margin: -10px auto 0 auto;
+    display: flex;
+    justify-content: space-around;
+    background-color: white;
+}
+
+nav #selected {
+    text-decoration: underline;
+}
+
+main {
+    width: 80%;
+    height: auto;
+    margin: 0 auto 0 auto;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    color: gray;
+    font-size: 15px;
+}
+
+.pagedesc {
+    width: 250px;
+    height: 260px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 20px 0;
+}
+
+.pagedesc img {
+    width: 250px;
+    height: 250px;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+.pagedesc iframe {
+    width: 250px;
+    height: 250px;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+.pagetitle {
+    width: 100%;
+    text-align: center;
+}
+
+.contactMe {
+    width: 90%;
+    margin: 25px auto;
+}
+
+.contactMe iframe {
+    width: 100%;
+    height: 350px;
+    border: none;
+}
+
+video {
+    width: 250px;
+    height: 250px;
+}
+
+footer {
+    width: 80%;
+    border-top: 2px solid gray;
+    margin: 20px auto 0 auto;
+    padding: 50px 0 50px 0;
+    display: flex;
+    justify-content: center;
+}
