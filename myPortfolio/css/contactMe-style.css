@@ -1,0 +1,101 @@
+body {
+    background-color: white;
+}
+
+.contactform {
+    width: 85%;
+    margin: 0 auto;
+    color: black;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: auto;
+    grid-template-areas:
+        "labelFirst formFirst"
+        "labelLast formLast"
+        "labelEmail formEmail"
+        "labelState formState"
+        "labelMessage formMessage"
+        "contactBtn contactBtn";
+    border: none;
+    padding: 15px 15px 15px 5px;
+}
+
+.contactlabel {
+    width: 95%;
+    text-align: right;
+    margin: 0 20px 0 0;
+}
+
+input[type="text"] {
+    width: 60%;
+    margin: 0 auto 15px 0;
+}
+
+input[type="email"] {
+    width: 60%;
+    margin: 0 auto 15px 0;
+}
+
+select {
+    margin: 0 auto 15px 0;
+}
+
+input[type="submit"] {
+    width: 75px;
+    height: 25px;
+    background-color: white;
+    border: 0 colid black;
+}
+
+#labelFirst {
+    grid-area: labelFirst;
+}
+
+#firsti {
+    grid-area: formFirst;
+}
+
+#labelLast {
+    grid-area: labelLast;
+}
+
+#lasti {
+    grid-area: formLast;
+}
+
+#labelEmail {
+    grid-area: labelEmail;
+}
+
+#emaili {
+    grid-area: formEmail;
+}
+
+#labelLocation {
+    grid-area: labelState;
+}
+
+#locatoni {
+    grid-area: formState;
+}
+
+#labelMessage {
+    grid-area: labelMessage;
+}
+
+#messagei {
+    grid-area: formMessage;
+}
+
+.contactBtn {
+    grid-area: contactBtn;
+    width: 40%;
+    margin: 20px auto 0 auto;
+    display: flex;
+    justify-content: space-around;
+}
+
+textarea {
+    width: 60%;
+    height: 100px;
+}
