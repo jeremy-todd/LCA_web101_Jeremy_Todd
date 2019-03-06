@@ -99,3 +99,30 @@ textarea {
     width: 60%;
     height: 100px;
 }
+
+@media (max-width: 1440px) {
+    .contactform {
+        width: 90%;
+    }
+}
+
+@media (max-width: 1024px) {
+    .contactform {
+        width: 100%;
+        grid-template-columns: 40% 60%;
+    }
+}
+
+@media (max-width: 768px) {
+    input[type="text"] {
+        width: 90%;
+    }
+
+    input[type="email"] {
+        width: 90%;
+    }
+
+    textarea {
+        width: 90%;
+    }
+}
