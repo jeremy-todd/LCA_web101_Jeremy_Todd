@@ -10,6 +10,9 @@ body {
 
 .header {
   position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   top: 0px;
   height: 125px;
   width: 80vw;
@@ -23,10 +26,9 @@ body {
 }
 
 .logodiv {
-  width: 40%;
-  margin-left: 5px;
-  margin-top: 15px;
-  float: left;
+  width: 45%;
+  display: flex;
+  justify-content: space-between;
 }
 
 .navbtn {
@@ -38,35 +40,27 @@ body {
 }
 
 .nav {
-  position: relative;
-  display: inline-block;
-  text-align: right;
-  width: 3%;
-  margin-right: 5px;
-  margin-top:15px;
-  float: right;
+  display: flex;
+  justify-content: space-between;
+  width: 45%;
 }
 
-.nav-content {
-  display: none;
-  position: absolute;
-  right: 0px;
-  background-color: #f1f1f1;
-  min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  z-index: 1;
-}
-
-.nav-content a {
+/*.nav button {
+  background-color: none;
   color: black;
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
+  box-shadow: 5px 5px 5px #454545;
+  font-variant: small-caps;
+  border: none;
+  border-radius: 5px;
+  padding: 0 -5px;
+  animation-delay: 2s;
+}*/
+
+.nav img {
+  width: 50px;
+  height: 50px;
+  border-radius: 5px;
 }
-
-.nav-content a:hover {background-color: #ddd;}
-
-.nav:hover .nav-content {display: block;}
 
 .main {
   width: 80vw;
@@ -83,7 +77,32 @@ body {
   margin-top: 15px;
 }
 
-@media (max-width: 800px) {
+#portfolio {
+  background-color: white;
+  color: black;
+  box-shadow: 5px 5px 5px #454545;
+  word-wrap: none;
+  height: 50px;
+  font-size: 16px;
+  font-variant: small-caps;
+  border: none;
+  border-radius: 5px;
+  padding: 0 15px;
+  animation-delay: 2s;
+}
+
+#flyingBall {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+#flyingBall img {
+  width: 100px;
+  height: 100px;
+}
+
+@media (max-width: 425px) {
   body {
     background-image: none;
     background-repeat: no-repeat;
@@ -93,9 +112,15 @@ body {
     margin: 0;
   }
 
+  .logodiv {
+    width: 35%;
+    display: flex;
+    justify-content: space-between;
+  }
+
   .logo {
-    width: 75px;
-    height: 75px;
+    width: 50px;
+    height: 50px;
   }
 
   #profile-pic {
@@ -104,12 +129,37 @@ body {
     border-radius: 50%;
     margin-top: 15px;
   }
-}
 
-#portfolio {
-  background-color: lightgray;
-  color: black;
-  padding: 4px;
-  font-size: 16px;
-  border-radius: 5%;
+  #flyingBall img {
+    width: 50px;
+    height: 50px;
+  }
+
+  .nav {
+    width: 55%;
+    justify-content: space-around;
+    /*flex-wrap: wrap;*/
+    margin: 5px 0 5px 0;
+  }
+
+  .nav img {
+    width: 40px;
+    height: 40px;
+    border-radius: 5px;
+  }
+
+  /*.nav button {
+    -webkit-appearance: none;
+    font-size: 12px;
+    padding: 0 5px;
+    line-height: 5%;
+    background-color: gray;
+    color: white;
+    box-sizing: border-box;
+  }*/
+
+  #portfolio {
+    background-color: gray;
+    color: white;
+  }
 }
