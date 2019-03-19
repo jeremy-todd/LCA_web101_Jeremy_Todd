@@ -15,7 +15,7 @@ body {
   align-items: center;
   top: 0px;
   height: 125px;
-  width: 80vw;
+  width: 80%;
   margin-left: auto;
   margin-right: auto;
 }
@@ -26,44 +26,26 @@ body {
 }
 
 .logodiv {
-  width: 45%;
+  width: 25%;
   display: flex;
   justify-content: space-between;
-}
-
-.navbtn {
-  background-color: white;
-  color: black;
-  padding: 8px;
-  font-size: 16px;
-  border: none;
 }
 
 .nav {
   display: flex;
-  justify-content: space-between;
-  width: 45%;
+  justify-content: space-around;
+  width: 18%;
 }
-
-/*.nav button {
-  background-color: none;
-  color: black;
-  box-shadow: 5px 5px 5px #454545;
-  font-variant: small-caps;
-  border: none;
-  border-radius: 5px;
-  padding: 0 -5px;
-  animation-delay: 2s;
-}*/
 
 .nav img {
   width: 50px;
   height: 50px;
   border-radius: 5px;
+  box-shadow: 5px 5px 5px black;
 }
 
 .main {
-  width: 80vw;
+  width: 80%;
   height: 100vh;
   margin-left: auto;
   margin-right:auto;
@@ -78,9 +60,10 @@ body {
 }
 
 #portfolio {
-  background-color: white;
-  color: black;
-  box-shadow: 5px 5px 5px #454545;
+  background-color: #555555;
+  color: white;
+  font-weight: bolder;
+  box-shadow: 5px 5px 5px black;
   word-wrap: none;
   height: 50px;
   font-size: 16px;
@@ -102,6 +85,32 @@ body {
   height: 100px;
 }
 
+@media (max-width: 1440px) {
+  .logodiv {
+    width: 35%;
+  }
+
+  .nav {
+    width: 23%;
+  }
+}
+
+@media (max-width: 1024px) {
+  .nav {
+    width: 33%;
+  }
+}
+
+@media (max-width: 768px) {
+  .logodiv {
+    width: 45%;
+  }
+
+  .nav {
+    width: 43%;
+  }
+}
+
 @media (max-width: 425px) {
   body {
     background-image: none;
@@ -110,6 +119,11 @@ body {
     background-size: 100% 100%;
     font-family: Arial, Helvetica, sans-serif;
     margin: 0;
+  }
+
+  .header {
+    height: 75px;
+    width: 100%;
   }
 
   .logodiv {
@@ -123,9 +137,13 @@ body {
     height: 50px;
   }
 
+  .main {
+    width: 100%;
+  }
+
   #profile-pic {
-    width: 300px;
-    height: 300px;
+    width: 250px;
+    height: 250px;
     border-radius: 50%;
     margin-top: 15px;
   }
@@ -136,27 +154,16 @@ body {
   }
 
   .nav {
-    width: 55%;
-    justify-content: space-around;
-    /*flex-wrap: wrap;*/
+    width: 53%;
+    justify-content: space-between;
     margin: 5px 0 5px 0;
   }
 
   .nav img {
-    width: 40px;
-    height: 40px;
+    width: 30px;
+    height: 30px;
     border-radius: 5px;
   }
-
-  /*.nav button {
-    -webkit-appearance: none;
-    font-size: 12px;
-    padding: 0 5px;
-    line-height: 5%;
-    background-color: gray;
-    color: white;
-    box-sizing: border-box;
-  }*/
 
   #portfolio {
     background-color: gray;
