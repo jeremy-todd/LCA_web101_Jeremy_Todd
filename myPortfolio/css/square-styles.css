@@ -1,0 +1,119 @@
+.container {
+    width: 800px;
+    height: auto;
+    border: 1px solid darkgray;
+    box-shadow: 5px 5px 5px gray;
+    margin: 50px auto 0 auto;
+    padding: 15px;
+    box-sizing: border-box;
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.testboxOdd {
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    margin: 0 auto 15px auto;
+    box-sizing: border-box;
+    transition: all 6s;
+}
+
+.testboxEven {
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    margin: 0 auto 15px auto;
+    box-sizing: border-box;
+    transition: all 2s;
+}
+
+.container:hover > .testboxOdd {
+    transform: scale(0.5,0.5) translateX(calc(-800px + 50px)) translateY(-30px) rotate(360deg);
+}
+
+.container:hover > .testboxEven {
+    transform: scale(2,2) translateX(165px) rotate(-360deg);
+}
+
+#box01 {
+    background-color: red;
+}
+
+#box02 {
+    background-color: blue;
+}
+
+#box03 {
+    background-color: green;
+}
+
+#box04 {
+    background-color: yellow;
+}
+
+#box05 {
+    background-color: pink;
+}
+
+#box06 {
+    background-color: orange;
+}
+
+#box07 {
+    background-color: black;
+}
+
+#box08 {
+    background-color: gray;
+}
+
+#box09 {
+    background-color: purple;
+}
+
+#box10 {
+    background-color: teal;
+}
+
+#box11 {
+    background-color: salmon;
+}
+
+#box12 {
+    background-color: brown;
+}
+
+#text {
+    text-align: center;
+    margin-bottom: 15px;
+    font-size: 25px;
+}
+
+@media (max-width: 768px) {
+    .container {
+        width: 600px;
+    }
+
+    .container:hover > .testboxOdd {
+        transform: scale(0.5,0.5) translateX(calc(-600px + 50px)) translateY(-30px) rotate(360deg);
+    }
+    
+    .container:hover > .testboxEven {
+        transform: scale(2,2) translateX(118px) translateY(-7px) rotate(-360deg);
+    }
+}
+
+@media (max-width: 425px) {
+    .container {
+        width: 250px;
+    }
+
+    .container:hover > .testboxOdd {
+        transform: scale(0.5,0.5) translateX(calc(-250px + 50px)) translateY(-30px) rotate(360deg);
+    }
+    
+    .container:hover > .testboxEven {
+        transform: scale(2,2) translateX(30px) translateY(-7px) rotate(-360deg);
+    }
+}
