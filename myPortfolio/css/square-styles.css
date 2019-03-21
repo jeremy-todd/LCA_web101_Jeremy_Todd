@@ -37,50 +37,98 @@
 }
 
 #box01 {
-    background-color: red;
-}
-
-#box02 {
-    background-color: blue;
-}
-
-#box03 {
-    background-color: green;
-}
-
-#box04 {
-    background-color: yellow;
-}
-
-#box05 {
-    background-color: pink;
-}
-
-#box06 {
-    background-color: orange;
-}
-
-#box07 {
-    background-color: black;
-}
-
-#box08 {
-    background-color: gray;
-}
-
-#box09 {
-    background-color: purple;
-}
-
-#box10 {
-    background-color: teal;
-}
-
-#box11 {
     background-color: salmon;
 }
 
+#box02 {
+    background-color: brown;
+}
+
+#box03 {
+    background-color: red;
+}
+
+#box04 {
+    background-color: blue;
+}
+
+#box05 {
+    background-color: green;
+}
+
+#box06 {
+    background-color: yellow;
+}
+
+#box07 {
+    background-color: pink;
+}
+
+#box08 {
+    background-color: orange;
+}
+
+#box09 {
+    background-color: black;
+}
+
+#box10 {
+    background-color: gray;
+}
+
+#box11 {
+    background-color: purple;
+}
+
 #box12 {
+    background-color: teal;
+}
+
+.container:hover > #box01 {
+    background-color: red;
+}
+
+.container:hover > #box02 {
+    background-color: blue;
+}
+
+.container:hover > #box03 {
+    background-color: green;
+}
+
+.container:hover > #box04 {
+    background-color: yellow;
+}
+
+.container:hover > #box05 {
+    background-color: pink;
+}
+
+.container:hover > #box06 {
+    background-color: orange;
+}
+
+.container:hover > #box07 {
+    background-color: black;
+}
+
+.container:hover > #box08 {
+    background-color: gray;
+}
+
+.container:hover > #box09 {
+    background-color: purple;
+}
+
+.container:hover > #box10 {
+    background-color: teal;
+}
+
+.container:hover > #box11 {
+    background-color: salmon;
+}
+
+.container:hover > #box12 {
     background-color: brown;
 }
 
