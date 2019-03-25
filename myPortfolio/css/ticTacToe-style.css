@@ -1,0 +1,250 @@
+body {
+    margin: 0;
+    background-color: black;
+}
+
+.gameBoard {
+    width: 500px;
+    height: 500px;
+    margin: 50px auto 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas:
+        "r1c1 r1c2 r1c3"
+        "r2c1 r2c2 r2c3"
+        "r3c1 r3c2 r3c3";
+    font-size: 100px;
+    color: limegreen;
+    font-family: 'Shadows Into Light', cursive;
+}
+
+#r1c1 {
+    grid-area: r1c1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    border-bottom: 2px solid limegreen;
+    border-right: 2px solid limegreen;
+}
+
+#r1c2 {
+    grid-area: r1c2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    border-bottom: 2px solid limegreen;
+    border-left: 2px solid limegreen;
+    border-right: 2px solid limegreen;
+}
+
+#r1c3 {
+    grid-area: r1c3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    border-bottom: 2px solid limegreen;
+    border-left: 2px solid limegreen;
+}
+
+#r2c1 {
+    grid-area: r2c1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    border-top: 2px solid limegreen;
+    border-bottom: 2px solid limegreen;
+    border-right: 2px solid limegreen;
+}
+
+#r2c2 {
+    grid-area: r2c2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    border-top: 2px solid limegreen;
+    border-bottom: 2px solid limegreen;
+    border-right: 2px solid limegreen;
+    border-left: 2px solid limegreen;
+}
+
+#r2c3 {
+    grid-area: r2c3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    border-top: 2px solid limegreen;
+    border-bottom: 2px solid limegreen;
+    border-left: 2px solid limegreen;
+}
+
+#r3c1 {
+    grid-area: r3c1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    border-top: 2px solid limegreen;
+    border-right: 2px solid limegreen;
+}
+
+#r3c2 {
+    grid-area: r3c2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    border-top: 2px solid limegreen;
+    border-right: 2px solid limegreen;
+    border-left: 2px solid limegreen;
+}
+
+#r3c3 {
+    grid-area: r3c3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    border-top: 2px solid limegreen;
+    border-left: 2px solid limegreen;
+}
+
+.buttons {
+    width: 500px;
+    margin: 50px auto 0 auto;
+    display: flex;
+    justify-content: space-around;
+}
+
+#buttonX {
+    width: 100px;
+    height: 30px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+#buttonO {
+    width: 100px;
+    height: 30px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+#buttonClear {
+    width: 150px;
+    height: 30px;
+    font-size: 18px;
+    font-weight: bold;
+    font-variant: small-caps;
+}
+
+#gameWinner {
+    width: 500px;
+    height: 75px;
+    margin: 25px auto 0 auto;
+    font-size: 50px;
+    text-align: center;
+    color: white;
+    font-family: 'Shadows Into Light', cursive;
+}
+
+.tally {
+    width: 500px;
+    margin: 25px auto 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas:
+        "tallyX tallyO tallyC"
+        "winsX winsO winsC";
+    color: white;
+    font-size: 65px;
+    text-align: center;
+    font-family: 'Cousine', monospace;
+}
+
+.tallyHeading {
+    border-bottom: 2px solid white;
+}
+
+#tallyX {
+    grid-area: tallyX;
+    border-right: 2px solid white;
+}
+
+#tallyO {
+    grid-area: tallyO;
+    border-left: 2px solid white;
+    border-right: 2px solid white;
+}
+
+#tallyC {
+    grid-area: tallyC;
+    border-left: 2px solid white;
+}
+
+#winsX {
+    grid-area: winsX;
+    border-top: 2px solid white;
+    border-right: 2px solid white;
+}
+
+#winsO {
+    grid-area: winsO;
+    border-top: 2px solid white;
+    border-left: 2px solid white;
+    border-right: 2px solid white;
+}
+
+#winsC {
+    grid-area: winsC;
+    border-top: 2px solid white;
+    border-left: 2px solid white;
+}
+
+@media (max-width: 425px) {
+    .gameBoard {
+        width: 300px;
+        height: 300px;
+        font-size: 60px;
+    }
+    
+    .buttons {
+        width: 300px;
+    }
+
+    #buttonX {
+        width: 50px;
+        height: 35px;
+        font-size: 18px; 
+    }
+
+    #buttonO {
+        width: 50px;
+        height: 35px;
+        font-size: 18px;
+    }
+
+    #buttonClear {
+        width: 150px;
+        height: 35px;
+        font-size: 18px;
+    }
+
+    #gameWinner {
+        width: 300px;
+        height: 50px;
+        font-size: 25px;
+    }
+
+    .tally {
+        width: 300px;
+        font-size: 30px;
+    }
+}
