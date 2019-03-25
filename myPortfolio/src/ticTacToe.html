@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../css/ticTacToe-style.css">
+    <link href="https://fonts.googleapis.com/css?family=Cousine|Shadows+Into+Light" rel="stylesheet">
+    <script src="../script/ticTacToe.js"></script>
+    <title>Tic Tac Toe</title>
+</head>
+<body>
+    <section class="gameBoard">
+        <section id="r1c1" onclick="placeMark('r1c1')"></section>
+        <section id="r1c2" onclick="placeMark('r1c2')"></section>
+        <section id="r1c3" onclick="placeMark('r1c3')"></section>
+        <section id="r2c1" onclick="placeMark('r2c1')"></section>
+        <section id="r2c2" onclick="placeMark('r2c2')"></section>
+        <section id="r2c3" onclick="placeMark('r2c3')"></section>
+        <section id="r3c1" onclick="placeMark('r3c1')"></section>
+        <section id="r3c2" onclick="placeMark('r3c2')"></section>
+        <section id="r3c3" onclick="placeMark('r3c3')"></section>
+    </section>
+    <section class="buttons">
+        <!--<button id="buttonX" onclick="changeMarker('X')">X</button>
+        <button id="buttonO" onclick="changeMarker('O')">O</button>-->
+        <button id="buttonClear" onclick="clearBoard()">Reset Board</button>
+    </section>-->
+    <section id="gameWinner"></section>
+    <section class="tally">
+        <section class="tallyHeading" id="tallyX">X</section>
+        <section class="tallyHeading" id="tallyO">O</section>
+        <section class="tallyHeading" id="tallyC">Draw</section>
+        <section id="winsX">0</section>
+        <section id="winsO">0</section>
+        <section id="winsC">0</section>
+    </section>
+</body>
+</html>
