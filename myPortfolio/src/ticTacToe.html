@@ -9,7 +9,7 @@
     <script src="../script/ticTacToe.js"></script>
     <title>Tic Tac Toe</title>
 </head>
-<body>
+<body onload="hideReset()">
     <section class="gameBoard">
         <section id="r1c1" onclick="placeMark('r1c1')"></section>
         <section id="r1c2" onclick="placeMark('r1c2')"></section>
@@ -22,8 +22,6 @@
         <section id="r3c3" onclick="placeMark('r3c3')"></section>
     </section>
     <section class="buttons">
-        <!--<button id="buttonX" onclick="changeMarker('X')">X</button>
-        <button id="buttonO" onclick="changeMarker('O')">O</button>-->
         <button id="buttonClear" onclick="clearBoard()">Reset Board</button>
     </section>-->
     <section id="gameWinner"></section>

@@ -6,6 +6,10 @@ var winC = 0;
 
 var winner = "no";
 
+function hideReset() {
+    document.getElementById("buttonClear").style.visibility = "hidden";
+}
+
 function changeMarker(mkr) {
 
     if (mkr == 'X') {
@@ -13,13 +17,6 @@ function changeMarker(mkr) {
     } else if (mkr == 'O') {
         gameMarker = 'O';
     }
-    
-    /*if (gameMarker == 'X') {
-        gameMarker = 'O';
-    } else if (gameMarker == 'O') {
-        gameMarker = 'X';
-    }*/
-    //console.log('The marker is now ' + gameMarker + '.');
 }
 
 function placeMark(sq) {
@@ -50,8 +47,10 @@ function determineWinner() {
         document.getElementById('gameWinner').innerHTML = gameMarker + " wins this game!";
         if (gameMarker == 'X') {
             document.getElementById('winsX').innerHTML = ++winX;
+            document.getElementById("buttonClear").style.visibility = "visible";
         } else if (gameMarker == 'O') {
             document.getElementById('winsO').innerHTML = ++winO;
+            document.getElementById("buttonClear").style.visibility = "visible";
         }
         winner = "yes";
     } else if (r2c1 == r2c2 && r2c2 == r2c3 && r2c1 != "" && r2c2 != "" && r2c3 != "" && winner == "no") {
@@ -59,8 +58,10 @@ function determineWinner() {
         document.getElementById('gameWinner').innerHTML = gameMarker + " wins this game!";
         if (gameMarker == 'X') {
             document.getElementById('winsX').innerHTML = ++winX;
+            document.getElementById("buttonClear").style.visibility = "visible";
         } else if (gameMarker == 'O') {
             document.getElementById('winsO').innerHTML = ++winO;
+            document.getElementById("buttonClear").style.visibility = "visible";
         }
         winner = "yes";
     } else if (r3c1 == r3c2 && r3c2 == r3c3 && r3c1 != "" && r3c2 != "" && r3c3 != "" && winner == "no") {
@@ -68,8 +69,10 @@ function determineWinner() {
         document.getElementById('gameWinner').innerHTML = gameMarker + " wins this game!";
         if (gameMarker == 'X') {
             document.getElementById('winsX').innerHTML = ++winX;
+            document.getElementById("buttonClear").style.visibility = "visible";
         } else if (gameMarker == 'O') {
             document.getElementById('winsO').innerHTML = ++winO;
+            document.getElementById("buttonClear").style.visibility = "visible";
         }
         winner = "yes";
     } else if (r1c1 == r2c1 && r2c1 == r3c1 && r1c1 != "" && r2c1 != "" && r3c1 != "" && winner == "no") {
@@ -77,8 +80,10 @@ function determineWinner() {
         document.getElementById('gameWinner').innerHTML = gameMarker + " wins this game!";
         if (gameMarker == 'X') {
             document.getElementById('winsX').innerHTML = ++winX;
+            document.getElementById("buttonClear").style.visibility = "visible";
         } else if (gameMarker == 'O') {
             document.getElementById('winsO').innerHTML = ++winO;
+            document.getElementById("buttonClear").style.visibility = "visible";
         }
         winner = "yes";
     } else if (r1c2 == r2c2 && r2c2 == r3c2 && r1c2 != "" && r2c2 != "" && r3c2 != "" && winner == "no") {
@@ -86,8 +91,10 @@ function determineWinner() {
         document.getElementById('gameWinner').innerHTML = gameMarker + " wins this game!";
         if (gameMarker == 'X') {
             document.getElementById('winsX').innerHTML = ++winX;
+            document.getElementById("buttonClear").style.visibility = "visible";
         } else if (gameMarker == 'O') {
             document.getElementById('winsO').innerHTML = ++winO;
+            document.getElementById("buttonClear").style.visibility = "visible";
         }
         winner = "yes";
     } else if (r1c3 == r2c3 && r2c3 == r3c3 && r1c3 != "" && r2c3 != "" && r3c3 != "" && winner == "no") {
@@ -95,8 +102,10 @@ function determineWinner() {
         document.getElementById('gameWinner').innerHTML = gameMarker + " wins this game!";
         if (gameMarker == 'X') {
             document.getElementById('winsX').innerHTML = ++winX;
+            document.getElementById("buttonClear").style.visibility = "visible";
         } else if (gameMarker == 'O') {
             document.getElementById('winsO').innerHTML = ++winO;
+            document.getElementById("buttonClear").style.visibility = "visible";
         }
         winner = "yes";
     } else if (r1c1 == r2c2 && r2c2 == r3c3 && r1c1 != "" && r2c2 != "" && r3c3 != "" && winner == "no") {
@@ -104,8 +113,10 @@ function determineWinner() {
         document.getElementById('gameWinner').innerHTML = gameMarker + " wins this game!";
         if (gameMarker == 'X') {
             document.getElementById('winsX').innerHTML = ++winX;
+            document.getElementById("buttonClear").style.visibility = "visible";
         } else if (gameMarker == 'O') {
             document.getElementById('winsO').innerHTML = ++winO;
+            document.getElementById("buttonClear").style.visibility = "visible";
         }
         winner = "yes";
     } else if (r1c3 == r2c2 && r2c2 == r3c1 && r1c3 != "" && r2c2 != "" && r3c1 != "" && winner == "no") {
@@ -113,14 +124,17 @@ function determineWinner() {
         document.getElementById('gameWinner').innerHTML = gameMarker + " wins this game!";
         if (gameMarker == 'X') {
             document.getElementById('winsX').innerHTML = ++winX;
+            document.getElementById("buttonClear").style.visibility = "visible";
         } else if (gameMarker == 'O') {
             document.getElementById('winsO').innerHTML = ++winO;
+            document.getElementById("buttonClear").style.visibility = "visible";
         }
         winner = "yes";
     } else {
         if (r1c1 != "" && r1c2 != "" && r1c3 != "" && r2c1 != "" && r2c2 != "" && r2c3 != "" && r3c1 != "" && r3c2 != "" && r3c3 != "" && winner == "no") {
             document.getElementById('gameWinner').innerHTML = "This game is a draw!";
             document.getElementById('winsC').innerHTML = ++winC;
+            document.getElementById("buttonClear").style.visibility = "visible";
             winner = "yes";
         }
     }
@@ -147,4 +161,6 @@ function clearBoard() {
     document.getElementById('gameWinner').innerHTML = "";
     winner = "no";
     gameMarker = 'X';
+    
+    document.getElementById("buttonClear").style.visibility = "hidden";
 }
