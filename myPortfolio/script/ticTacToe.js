@@ -13,24 +13,15 @@ function changeMarker(mkr) {
     } else if (mkr == 'O') {
         gameMarker = 'O';
     }
-    
-    /*if (gameMarker == 'X') {
-        gameMarker = 'O';
-    } else if (gameMarker == 'O') {
-        gameMarker = 'X';
-    }*/
-    //console.log('The marker is now ' + gameMarker + '.');
 }
 
 function placeMark(sq) {
     var sqr = sq;
-    //console.log('A/An ' + gameMarker + ' should be placed in square ' + sq + '.');)
     if (document.getElementById(sqr).innerHTML == "" && winner == "no") {
         document.getElementById(sqr).innerHTML = gameMarker;
     } else {
         document.getElementById(sqr).innerHTML = document.getElementById(sqr).innerHTML;
     }
-    //document.getElementById(sqr).innerHTML = gameMarker;
     determineWinner();
 }
 
@@ -130,8 +121,6 @@ function determineWinner() {
     } else if (gameMarker == 'O') {
         gameMarker = 'X';
     }
-
-    //changeMarker();
 }
 
 function clearBoard() {
