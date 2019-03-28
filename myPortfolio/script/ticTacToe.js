@@ -21,13 +21,11 @@ function changeMarker(mkr) {
 
 function placeMark(sq) {
     var sqr = sq;
-    //console.log('A/An ' + gameMarker + ' should be placed in square ' + sq + '.');)
     if (document.getElementById(sqr).innerHTML == "" && winner == "no") {
         document.getElementById(sqr).innerHTML = gameMarker;
     } else {
         document.getElementById(sqr).innerHTML = document.getElementById(sqr).innerHTML;
     }
-    //document.getElementById(sqr).innerHTML = gameMarker;
     determineWinner();
 }
 
@@ -144,8 +142,6 @@ function determineWinner() {
     } else if (gameMarker == 'O') {
         gameMarker = 'X';
     }
-
-    //changeMarker();
 }
 
 function clearBoard() {
