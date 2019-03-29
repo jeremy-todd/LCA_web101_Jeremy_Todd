@@ -14,22 +14,15 @@
         <div class="todo">
             <div class="tasks">
                 <div id="todo">To Do:</div>
-                <div class="when">Today</div>
-                <div class="task"><input type="checkbox" id="item01">Item 1 needs to wrap when smaller screen</div>
-                <div class="due">02/21/2019</div>
-                <div class="task"><input type="checkbox" id="item02">Item 2...</div>
-                <div class="due">02/21/2019</div>
-                <div class="when">Tomorrow</div>
-                <div class="task"><input type="checkbox" id="item03">Item 3...</div>
-                <div class="due">02/22/2019</div>
-                <div class="task"><input type="checkbox" id="item04">Item 4...</div>
-                <div class="due">02/22/2019</div>
-                <div class="when">Next Week</div>
-                <div class="task"><input type="checkbox" id="item05">Item 5...</div>
-                <div class="due">02/25/2019</div>
-                <div class="task"><input type="checkbox" id="item06">Item 6...</div>
-                <div class="due">02/28/2019</div>
-
+                <ul>
+                    <li class="item">Add a Due Date Field to the To Do list.</li>
+                </ul>
+                <div class="addNewItem">
+                    <form id="newItemForm">
+                        <input type="text" placeholder="Add New Item" id="itemField" />
+                        <input type="submit" id="add" value="Add" />
+                    </form>
+                </div>
             </div>
         </div>
         <div id="dte"><span id="date">February 21, 2019</span></div>
@@ -146,5 +139,7 @@
             <div id="ql15">15</div>
         </div>
     </div>
+    <script src="../script/jquery-3.3.1.js"></script>
+    <script src="../script/dashboardScript.js"></script>
 </body>
 </html>
