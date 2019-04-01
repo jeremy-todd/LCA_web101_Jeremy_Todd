@@ -98,8 +98,8 @@ $(function() {
       var hrsNow = hrsNow - 12;
     }
 
-    //document.getElementById("time").innerHTML = hrsNow + ":" + minNow + ":" + secNow + " " + ampmNow;
-    document.getElementById("time").innerHTML = hrsNow + ":" + minNow + " " + ampmNow;
+    document.getElementById("time").innerHTML = hrsNow + ":" + minNow + ":" + secNow + " " + ampmNow;
+    //document.getElementById("time").innerHTML = hrsNow + ":" + minNow + " " + ampmNow;
 
     refreshTime();
   }
