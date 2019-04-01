@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
     <title>Dashboard</title>
 </head>
-<body>
+<body onload="getLocation()">
     <div class="container">
         <div class="greeting"><p id="greeting">Good Afternoon!</p><p id="phrase">"Even if you're on the right track you'll get run over if you just sit there."</p><p id="attribution">-Will Rogers</p></div>
         <div class="todo">
@@ -25,8 +25,8 @@
                 </div>
             </div>
         </div>
-        <div id="dte"><span id="date">February 21, 2019</span></div>
-        <div id="tme"><span id="time">1:28 PM</span></div>
+        <div id="dte"><span id="date"></span></div>
+        <div id="tme"><span id="time"></span></div>
         <div class="calendar">
             <div id="monthbox">
                 <div id="prevMonth"><i class="fas fa-caret-left"></i></div>
@@ -98,27 +98,15 @@
             <div id="point">.</div>
             <div id="equals"><i class="fas fa-equals"></i></div>
         </div>
-        <div id="calculator2">
-            <div id="display2"><input type="text" id="disp2" value="flex calculator"></div>        
-            <div id="ac2">AC</div>
-            <div id="positive2">+/-</div>
-            <div id="percent2">%</div>
-            <div id="divide2"><i class="fas fa-divide"></i></div>
-            <div id="seven2">7</div>
-            <div id="eight2">8</div>
-            <div id="nine2">9</div>
-            <div id="multiply2"><i class="fas fa-times"></i></div>
-            <div id="four2">4</div>
-            <div id="five2">5</div>
-            <div id="six2">6</div>
-            <div id="minus2"><i class="fas fa-minus"></i></div>
-            <div id="one2">1</div>
-            <div id="two2">2</div>
-            <div id="three2">3</div>
-            <div id="plus2"><i class="fas fa-plus"></i></div>
-            <div id="zero2">0</div>
-            <div id="point2">.</div>
-            <div id="equals2"><i class="fas fa-equals"></i></div>
+        <div class="location">
+            <section id="locHeader">Your current Location is:</section>
+                <section id="location"></section>
+                <section id ="locData"><span id="posLatitude"></span>, <span id="posLongitude"></span></section>
+                <section class="mapouter">
+                    <section class="gmap_canvas">
+                        <iframe id="gmap_canvas" src="#" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+                    </section>
+                </section>
         </div>
         <div class="quicklaunch">
             <div id="ql">Quick Launch</div>
