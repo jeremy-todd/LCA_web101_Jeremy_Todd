@@ -19,8 +19,8 @@ body {
         "greeting greeting greeting greeting greeting"
         "todo todo dte dte calculator"
         "todo todo tme tme calculator"
-        "todo todo calendar calendar calculator2"
-        "todo todo calendar calendar calculator2"
+        "todo todo calendar calendar location"
+        "todo todo calendar calendar location"
         "todo todo quicklaunch quicklaunch quicklaunch";
 }
 
@@ -888,7 +888,7 @@ li {
     margin: 5px 10px 10px 5px;
 }
 
-#calculator2 {
+/*#calculator2 {
     grid-area: calculator2;
     width: 400px;
     margin-left: auto;
@@ -911,7 +911,7 @@ li {
     background-color: white;
     color: black;
     border: 2px solid black;
-}
+}*/
 
 #display input[type=text] {
     width: 376px;
@@ -920,7 +920,7 @@ li {
     text-align: right;
 }
 
-#display2 input[type=text] {
+/*#display2 input[type=text] {
     width: 376px;
     height: 79px;
     font-size: 50px;
@@ -1156,6 +1156,46 @@ li {
     color: white;
     border-radius: 25px;
     margin: 5px 10px 10px 5px;
+}*/
+
+.location {
+    grid-area: location;
+    width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 10px;
+    padding-bottom: 25px;
+    font-size: 35px;
+    text-align: center;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: white;
+    border: 2px solid black;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#locHeader {
+    box-sizing: border-box;
+    padding-bottom: 25px;
+}
+
+.mapouter {
+    height:450px;
+    width:350px;
+}
+
+.gmap_canvas {
+    overflow:hidden;
+    background:none!important;
+    height:450px;
+    width:350px;
+}
+
+.gmap_canvas iframe {
+    width: 100%;
+    height: 100%;
 }
 
 .quicklaunch {
@@ -1371,8 +1411,8 @@ li {
             "todo todo tme"
             "todo todo calculator"
             "todo todo calculator"
-            "todo todo calculator2"
-            "todo todo calculator2"
+            "todo todo location"
+            "todo todo location"
             "todo todo calendar"
             "todo todo quicklaunch"
     }
@@ -1407,12 +1447,12 @@ li {
         height: 12px;
     }
 
-    .addNewItem input[type='text'] {
+    #addNewItem input[type='text'] {
         font-size: 20px;
         height: 25px;
     }
       
-    .addNewItem input[type='submit'] {
+    #addNewItem input[type='submit'] {
         font-size: 20px;
         height: 40px;
     }
@@ -1548,7 +1588,7 @@ li {
         font-size: 35px;
     }
 
-    #display2 input[type=text] {
+    /*#display2 input[type=text] {
         width: 341px;
         height: 64px;
         font-size: 35px;
@@ -1657,7 +1697,7 @@ li {
     #equals2 {
         width: 70px;
         height: 70px;
-    }
+    }*/
 
     .quicklaunch {
         grid-template-rows: 40px auto;
@@ -1744,8 +1784,7 @@ li {
             "todo"
             "calculator"
             "calculator"
-            "calculator2"
-            "calculator2"
+            "location"
             "calendar"
             "quicklaunch";
     }
