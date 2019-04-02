@@ -16,7 +16,6 @@ $(function() {
       let $this = $(this);
       $this.remove();
     });
-  
   });
 
   var myLocation = document.getElementById("location");
@@ -40,8 +39,6 @@ $(function() {
     document.getElementById("posLatitude").innerHTML = posLat;
     document.getElementById("gmap_canvas").src="https://maps.google.com/maps?q="+posLatitude+"%2C%20"+posLongitude+"&t=k&z=15&ie=UTF8&iwloc=&output=embed";
   }
- 
-  
 
   function getDateTime() {
     var todayDate = new Date();

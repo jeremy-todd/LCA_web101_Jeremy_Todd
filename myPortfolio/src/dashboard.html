@@ -78,32 +78,32 @@
                 <div id="week5Saturday"></div>
             </div>
         </div> 
-        <div id="calculator">
-            <div id="display"><input type="text" id="disp1" value="grid calculator"></div>
-            <div id="ac">AC</div>
-            <div id="positive">+/-</div>
-            <div id="percent">%</div>
-            <div id="divide"><i class="fas fa-divide"></i></div>
-            <div id="seven">7</div>
-            <div id="eight">8</div>
-            <div id="nine">9</div>
-            <div id="multiply"><i class="fas fa-times"></i></div>
-            <div id="four">4</div>
-            <div id="five">5</div>
-            <div id="six">6</div>
-            <div id="minus"><i class="fas fa-minus"></i></div>
-            <div id="one">1</div>
-            <div id="two">2</div>
-            <div id="three">3</div>
-            <div id="plus"><i class="fas fa-plus"></i></div>
-            <div id="zero">0</div>
-            <div id="point">.</div>
-            <div id="equals"><i class="fas fa-equals"></i></div>
+        <div class="calculator">
+            <div class="display">0</div>
+            <button id="ac">AC</button>
+            <button id="positive">+/-</button>
+            <button id="percent">%</button>
+            <button id="divide"><i class="fas fa-divide"></i></button>
+            <button id="seven">7</button>
+            <button id="eight">8</button>
+            <button id="nine">9</button>
+            <button id="multiply"><i class="fas fa-times"></i></button>
+            <button id="four">4</button>
+            <button id="five">5</button>
+            <button id="six">6</button>
+            <button id="minus"><i class="fas fa-minus"></i></button>
+            <button id="one">1</button>
+            <button id="two">2</button>
+            <button id="three">3</button>
+            <button id="plus"><i class="fas fa-plus"></i></button>
+            <button id="zero">0</button>
+            <button id="point">.</button>
+            <button id="equals"><i class="fas fa-equals"></i></button>
         </div>
         <div class="location">
             <section id="locHeader">Your current Location is:</section>
                 <section id="location"></section>
-                <section id ="locData"><span id="posLatitude"></span>, <span id="posLongitude"></span></section>
+                <section id ="locData"><section id="posLatitude"></section>,&nbsp;<section id="posLongitude"></section>&nbsp;<section id="posRefresh" onclick="getLocation()"><i class="fas fa-sync-alt"></i></section></section>
                 <section class="mapouter">
                     <section class="gmap_canvas">
                         <iframe id="gmap_canvas" src="https://www.google.com/maps" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
