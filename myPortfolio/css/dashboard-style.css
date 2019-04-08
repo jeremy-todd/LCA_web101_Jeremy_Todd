@@ -21,7 +21,7 @@ body {
         "todo todo dte dte calculator"
         "todo todo calendar calendar location"
         "todo todo calendar calendar location"
-        "todo todo quicklaunch quicklaunch quicklaunch";
+        "todo todo idlegame quicklaunch quicklaunch";
 }
 
 .greeting {
@@ -821,9 +821,9 @@ li {
     opacity: 0.75;
     grid-template-areas:
         "ql ql ql ql ql"
-        "ql01 ql02 ql03 ql04 ql05"
-        "ql06 ql07 ql08 ql09 ql10"
-        "ql11 ql12 ql13 ql14 ql15";
+        "ql01 ql02 ql03"
+        "ql046 ql05 ql06"
+        "ql07 ql08 ql09";
 }
 
 .quicklaunch #ql {
@@ -897,47 +897,42 @@ li {
     text-align: center;
 }
 
-.quicklaunch #ql10 {
-    grid-area: ql10;
-    border: 2px solid slategray;
+#board {
+    grid-area: idlegame;
+    display: flex;
+  }
+  .column {
+    width: 50px;
+    height: 300px;
+    background-color: #f2f2f2;
+    border-right: 1px solid #808080;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+  }
+  
+  .disc {
+    height: 50px;
+    width: 50px;
     border-radius: 25px;
-    text-align: center;
-}
-
-.quicklaunch #ql11 {
-    grid-area: ql11;
-    border: 2px solid slategray;
-    border-radius: 25px;
-    text-align: center;
-}
-
-.quicklaunch #ql12 {
-    grid-area: ql12;
-    border: 2px solid slategray;
-    border-radius: 25px;
-    text-align: center;
-}
-
-.quicklaunch #ql13 {
-    grid-area: ql13;
-    border: 2px solid slategray;
-    border-radius: 25px;
-    text-align: center;
-}
-
-.quicklaunch #ql14 {
-    grid-area: ql14;
-    border: 2px solid slategray;
-    border-radius: 25px;
-    text-align: center;
-}
-
-.quicklaunch #ql15 {
-    grid-area: ql15;
-    border: 2px solid slategray;
-    border-radius: 25px;
-    text-align: center;
-}
+  }
+  
+  .red {
+    background-color: red;
+  }
+  
+  .black {
+    background-color: black;
+  }
+  
+  .row {
+    clear: both;
+  }
+  
+  #announce-winner {
+    clear: both;
+    font-size: 50px;
+  }
 
 @media (max-width: 1440px) {
     .container {

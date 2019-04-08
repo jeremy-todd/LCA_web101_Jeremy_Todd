@@ -2,6 +2,106 @@
 
 $(function() {
 
+  let color = 'red';
+  let a = 0;
+  let b = 0;
+  let c = 0;
+  let d = 0;
+  let e = 0;
+  let f = 0;
+  let g = 0;
+  let colID = "";
+
+  $('.column').click(function() {
+      colID = $(this).attr("id");
+      if (colID == 'col1') {
+          if (a <= 5) {
+              $(this).prepend(`<div class="disc ${color}"></div>`);
+              console.log("column = " + colID);
+              console.log("a = " + a);
+              if (color === 'red') {
+              color = 'black';
+              } else {
+              color = 'red';
+              }
+              a++;
+          }
+      } else if (colID == 'col2') {
+          if (b <= 5) {
+              $(this).prepend(`<div class="disc ${color}"></div>`);
+              console.log("column = " + colID);
+              console.log("b = " + b);
+              if (color === 'red') {
+              color = 'black';
+              } else {
+              color = 'red';
+              }
+              b++;
+          }
+      } else if (colID == 'col3') {
+          if (c <= 5) {
+              $(this).prepend(`<div class="disc ${color}"></div>`);
+              console.log("column = " + colID);
+              console.log("c = " + c);
+              if (color === 'red') {
+              color = 'black';
+              } else {
+              color = 'red';
+              }
+              c++;
+          }
+      } else if (colID == 'col4') {
+          if (d <= 5) {
+              $(this).prepend(`<div class="disc ${color}"></div>`);
+              console.log("column = " + colID);
+              console.log("d = " + d);
+              if (color === 'red') {
+              color = 'black';
+              } else {
+              color = 'red';
+              }
+              d++;
+          }
+      } else if (colID == 'col5') {
+          if (e <= 5) {
+              $(this).prepend(`<div class="disc ${color}"></div>`);
+              console.log("column = " + colID);
+              console.log("e = " + e);
+              if (color === 'red') {
+              color = 'black';
+              } else {
+              color = 'red';
+              }
+              e++;
+          }
+      } else if (colID == 'col6') {
+          if (f <= 5) {
+              $(this).prepend(`<div class="disc ${color}"></div>`);
+              console.log("column = " + colID);
+              console.log("f = " + f);
+              if (color === 'red') {
+              color = 'black';
+              } else {
+              color = 'red';
+              }
+              f++;
+          }
+      }
+      else if (colID == 'col7') {
+          if (g <= 5) {
+              $(this).prepend(`<div class="disc ${color}"></div>`);
+              console.log("column = " + colID);
+              console.log("g = " + g);
+              if (color === 'red') {
+              color = 'black';
+              } else {
+              color = 'red';
+              }
+              g++;
+          }
+      }
+    });
+
     let $list = $('ul');
     let $newItemForm = $('#newItemForm');
   
