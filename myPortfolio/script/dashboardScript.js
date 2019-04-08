@@ -17,8 +17,8 @@ $(function() {
       if (colID == 'col1') {
           if (a <= 5) {
               $(this).prepend(`<div class="disc ${color}"></div>`);
-              console.log("column = " + colID);
-              console.log("a = " + a);
+              //console.log("column = " + colID);
+              //console.log("a = " + a);
               if (color === 'red') {
               color = 'black';
               } else {
@@ -29,8 +29,8 @@ $(function() {
       } else if (colID == 'col2') {
           if (b <= 5) {
               $(this).prepend(`<div class="disc ${color}"></div>`);
-              console.log("column = " + colID);
-              console.log("b = " + b);
+              //console.log("column = " + colID);
+              //console.log("b = " + b);
               if (color === 'red') {
               color = 'black';
               } else {
@@ -41,8 +41,8 @@ $(function() {
       } else if (colID == 'col3') {
           if (c <= 5) {
               $(this).prepend(`<div class="disc ${color}"></div>`);
-              console.log("column = " + colID);
-              console.log("c = " + c);
+              //console.log("column = " + colID);
+              //console.log("c = " + c);
               if (color === 'red') {
               color = 'black';
               } else {
@@ -53,8 +53,8 @@ $(function() {
       } else if (colID == 'col4') {
           if (d <= 5) {
               $(this).prepend(`<div class="disc ${color}"></div>`);
-              console.log("column = " + colID);
-              console.log("d = " + d);
+              //console.log("column = " + colID);
+              //console.log("d = " + d);
               if (color === 'red') {
               color = 'black';
               } else {
@@ -65,8 +65,8 @@ $(function() {
       } else if (colID == 'col5') {
           if (e <= 5) {
               $(this).prepend(`<div class="disc ${color}"></div>`);
-              console.log("column = " + colID);
-              console.log("e = " + e);
+              //console.log("column = " + colID);
+              //console.log("e = " + e);
               if (color === 'red') {
               color = 'black';
               } else {
@@ -77,8 +77,8 @@ $(function() {
       } else if (colID == 'col6') {
           if (f <= 5) {
               $(this).prepend(`<div class="disc ${color}"></div>`);
-              console.log("column = " + colID);
-              console.log("f = " + f);
+              //console.log("column = " + colID);
+              //console.log("f = " + f);
               if (color === 'red') {
               color = 'black';
               } else {
@@ -90,8 +90,8 @@ $(function() {
       else if (colID == 'col7') {
           if (g <= 5) {
               $(this).prepend(`<div class="disc ${color}"></div>`);
-              console.log("column = " + colID);
-              console.log("g = " + g);
+              //console.log("column = " + colID);
+              //console.log("g = " + g);
               if (color === 'red') {
               color = 'black';
               } else {
