@@ -21,7 +21,7 @@ body {
         "todo todo dte dte calculator"
         "todo todo calendar calendar location"
         "todo todo calendar calendar location"
-        "todo todo idlegame quicklaunch quicklaunch";
+        "idlegame idlegameclear quicklaunch quicklaunch quicklaunch";
 }
 
 .greeting {
@@ -742,7 +742,7 @@ li {
     margin: 5px 10px 10px 5px;
 }
 
-#display input[type=text] {
+#display input[type=text] { 
     width: 376px;
     height: 79px;
     font-size: 50px;
@@ -811,18 +811,19 @@ li {
 .quicklaunch {
     grid-area: quicklaunch;
     display: grid;
+    height: 240px;
     background-color: white;
     border: 2px solid black;
-    font-size: 40px;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-    grid-template-rows: 100px auto;
+    font-size: 35px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 75px auto;
     grid-gap: 5px;
     padding: 10px;
     opacity: 0.75;
     grid-template-areas:
-        "ql ql ql ql ql"
+        "ql ql ql"
         "ql01 ql02 ql03"
-        "ql046 ql05 ql06"
+        "ql04 ql05 ql06"
         "ql07 ql08 ql09";
 }
 
@@ -830,7 +831,7 @@ li {
     grid-area: ql;
     font-variant: small-caps;
     text-align: center;
-    font-size: 80px;
+    font-size: 50px;
     padding-top: 3px;
 }
 
@@ -900,39 +901,47 @@ li {
 #board {
     grid-area: idlegame;
     display: flex;
-  }
-  .column {
-    width: 50px;
-    height: 300px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.column {
+    width: 60px;
+    height: 360px;
     background-color: #f2f2f2;
     border-right: 1px solid #808080;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
-  }
-  
-  .disc {
-    height: 50px;
-    width: 50px;
-    border-radius: 25px;
-  }
-  
-  .red {
+    align-items: center;
+}
+
+.disc {
+    height: 60px;
+    width: 60px;
+    border-radius: 50px;
+}
+
+.red {
     background-color: red;
-  }
-  
-  .black {
+}
+
+.black {
     background-color: black;
-  }
-  
-  .row {
-    clear: both;
-  }
-  
-  #announce-winner {
-    clear: both;
-    font-size: 50px;
-  }
+}
+
+#boardclear {
+    grid-area: idlegameclear;
+    width: 50px;
+    height: 50px;
+    font-size: 40px;
+    border-radius: 10px;
+    margin: auto auto 145px -40px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
 @media (max-width: 1440px) {
     .container {
@@ -1001,6 +1010,24 @@ li {
     .quicklaunch #ql {
         font-size: 40px;
     }
+
+    #board {
+        margin-left: 13px;
+    }
+    
+    .column {
+        width: 35px;
+        height: 210px;
+    }
+    
+    .disc {
+        height: 35px;
+        width: 35px;
+    }
+    
+    #boardclear {
+        margin: auto auto 160px 0;
+    }
 }
 
 @media (max-width: 1024px) {
@@ -1009,13 +1036,13 @@ li {
         grid-template-areas:
             "greeting greeting greeting"
             "todo todo dte"
-            "todo todo tme"
             "todo todo calculator"
             "todo todo calculator"
             "todo todo location"
             "todo todo location"
             "todo todo calendar"
             "todo todo quicklaunch"
+            "idlegame idlegameclear quicklaunch"
     }
 
     .greeting #greeting {
@@ -1193,6 +1220,24 @@ li {
         font-size: 35px;
         padding-top: 0; 
     }
+
+    #board {
+        margin-left: 13px;
+    }
+    
+    .column {
+        width: 35px;
+        height: 210px;
+    }
+    
+    .disc {
+        height: 35px;
+        width: 35px;
+    }
+    
+    #boardclear {
+        margin: auto auto 80px -20px;
+    }
 }
 
 @media (max-width: 768px) {
@@ -1252,6 +1297,24 @@ li {
     #month {
         font-size: 35px;
     }
+
+    #board {
+        margin-left: 13px;
+    }
+    
+    .column {
+        width: 30px;
+        height: 180px;
+    }
+    
+    .disc {
+        height: 30px;
+        width: 30px;
+    }
+    
+    #boardclear {
+        margin: auto auto 80px 0;
+    }
 }
 
 @media (max-width: 425px) {
@@ -1272,6 +1335,26 @@ li {
             "calculator"
             "location"
             "calendar"
+            "idlegame"
+            "idlegameclear"
             "quicklaunch";
+    }
+
+    #board {
+        margin-left: auto;
+    }
+    
+    .column {
+        width: 55px;
+        height: 330px;
+    }
+    
+    .disc {
+        height: 55px;
+        width: 55px;
+    }
+    
+    #boardclear {
+        margin: auto auto;
     }
 }

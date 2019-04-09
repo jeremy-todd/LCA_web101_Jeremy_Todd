@@ -8,9 +8,9 @@
         /* 
         _This is a comment. Follow the other lines that look like me to complete the assignment. Start your LiveServer to see your changes as you save them.
         _"document" is the interface we have on the screen, also known as the DOM.
-        _.write is a built in method(or function) we can use to print things out on the document/screen. /*
+        _.write is a built in method(or function) we can use to print things out on the document/screen. */
         
-        document.write("this is the first line in the script I came across. Change me now.")
+        document.write("Welcome to JS Practice for Jeremy Todd!")
         document.write("<hr/>") // Don't worry about this line. 
         
         /*  Add
@@ -30,6 +30,7 @@
         _1. Now pass those same variables into the ".write()" method on line 30 but with a " - " in-between them. 
         _2. Save and checkout your browser. 
         */
+
         document.write(myNum1 - myNum2);
         document.write("<hr/>") // Don't worry about this line. 
         
@@ -44,7 +45,7 @@
         var myNum3 = 10;
         
         function multiplyTwoNumbers(a, b) {
-        return a * b
+            return a * b;
         }
         
         document.write(multiplyTwoNumbers(myNum3, myNum2));
@@ -91,11 +92,27 @@
         
         // examples of variables.
         var myVarOne = "I";
-        var myVarTwo = "Gangs of New York";
+        var myVarTwo = '"Gangs of New York"';
         var myVarThree = "love";
         
-        document.write("<hr/>")
         document.write(myVarOne + " " + myVarThree + " " + myVarTwo)
+        document.write("<hr/>")
+
+        // additional functions.
+
+        var myNum4 = 1;
+        var myNum5 = 1000;
+        var mySum1 = 0;
+
+        while (myNum4 <= myNum5) {
+            mySum1 = mySum1 + myNum4;
+            //console.log("mySum1 = " + mySum1 + " + " + myNum4);
+            //console.log("mySum1 = " + mySum1);
+            myNum4++;
+        }
+
+        document.write(myNum5+"! = " + mySum1);
+        document.write("<hr/>");
         </script>
 
        <p>When you're finshed see if you can bring in some of these other 
