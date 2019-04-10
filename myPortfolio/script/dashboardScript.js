@@ -2,6 +2,7 @@
 
 $(function() {
 
+  //idle game
   let color = 'red';
   let a = 0;
   let b = 0;
@@ -115,6 +116,8 @@ $(function() {
       g = 0;
     });
 
+
+    //To-Do List
     let $list = $('ul');
     let $newItemForm = $('#newItemForm');
   
