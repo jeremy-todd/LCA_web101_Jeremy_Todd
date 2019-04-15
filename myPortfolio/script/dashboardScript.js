@@ -1,7 +1,8 @@
 //dashboardScript.js
 
 $(function() {
-  //idlegame
+
+  //idle game
   let color = 'red';
   let a = 0;
   let b = 0;
