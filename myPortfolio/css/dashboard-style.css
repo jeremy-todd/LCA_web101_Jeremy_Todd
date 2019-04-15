@@ -610,7 +610,7 @@ li {
     font-size: 50px;
 }
 
-.calculator button {
+.calcbtn {
     width: 85px;
     height: 85px;
     background-color: black;
