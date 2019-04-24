@@ -1,0 +1,153 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+header {
+    font-size: 75px;
+    width: 85%;
+    margin: 0 auto;
+    padding-bottom: 15px;
+}
+
+.textArea {
+    width: 85%;
+    height: 100px;
+    margin: 0 auto;
+    font-size: 18px;
+}
+
+#userInput {
+    width: 100%;
+    height: 95%;
+    padding: 10px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.buttons {
+    width: 100%;
+    display: flex;
+}
+
+.translate {
+    width: 125px;
+    height: 35px;
+    font-weight: bolder;
+    background-color: lightgray;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+    text-transform: uppercase;
+    margin: 0 15px;
+}
+
+#hidden {
+    display: none;
+}
+
+.result {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 85%;
+    margin: 75px auto;
+}
+
+#translation {
+    width: 100%;
+    font-size: 40px;
+}
+
+.result img {
+    width: 215px;
+    height: 349px;
+    margin-left: 75px;
+}
+
+#resultText {
+    width: 75%;
+    min-height: 75px;
+    font-size: 20px;
+    margin: 0 auto;
+    box-sizing: border-box;
+    padding: 20px;
+    border: 2px solid black;
+	border-radius: .4em;
+}
+
+@media(max-width: 1440px) {
+    .result img {
+        width: 161px;
+        height: 262px;
+        margin-left: 15px;
+    }
+}
+
+@media(max-width: 1024px) {
+    header {
+        font-size: 50px;
+    }
+
+    .result img {
+        width: 121px;
+        height: 196px;
+        margin-left: 35px;
+    }
+
+    #resultText {
+        font-size: 16px;
+    }
+}
+
+@media(max-width: 768px) {
+    .result img {
+        width: 91px;
+        height: 147px;
+    }
+
+    #resultText {
+        font-size: 14px;
+    }
+
+    #resultText:after {
+        margin-top: -60px;
+    }
+
+    .translate {
+        width: 110px;
+        height: 30px;
+        font-size: 16px;
+        margin: 0 10px;
+    }
+}
+
+@media(max-width: 425px) {
+    header {
+        font-size: 35px;
+    }
+
+    .result img {
+        width: 68px;
+        height: 110px;
+        margin-left: 10px;
+    }
+
+    #resultText {
+        padding: 10px;
+    }
+}
+
+@media(max-width: 375px) {
+    .result img {
+        width: 51px;
+        height: 83px;
+    }
+}
+
+@media(max-width: 325px) {
+    .result img {
+        width: 38px;
+        height: 62px;
+    }
+}
